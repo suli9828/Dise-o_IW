@@ -1,46 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="This is my first webpage">
-    <meta name="keywords" content="coding, html, programming, web design,
-        internet">
-    <meta name="author" content="Student">
-    <meta name="generator" content="VS CODE">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/png" href="../img/robot.png" sizes="32x32">
-    <title>Formularios</title>
-</head>
-<body>
-    <p>
-        <form name="Datos Personales">
-            <legend>Datos Personales</legend>
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre"><br>
-            <label for="apellidos">Apellidos:</label>
-            <input type="text" name="apellidos"><br>
-            <label for="edad">Edad:</label>
-            <input type="number" name="edad"><br>
-            <label for="fechaNac">Fecha de nacimiento:</label>
-            <input type="date" name="fechaNac"><br>
-            <br>
-            <legend>Otros Datos</legend>
-            <label for="direccion">Dirección:</label>
-            <input type="text" name="direccion">
-            <label for="email">E-mail:</label>
-            <input type="email" name="email"><br>
-            <label for="telefono">Teléfono:</label>
-            <input type="text" name="telefono"><br>
-            <label for="color">Color favorito:</label>
-            <input type="color" name="color"><br>
-            <label for="pagInicio">Página de inicio:</label>
-            <input type="url" name="pagInicio"><br>
-            <br>
-            <input type="submit" name="enviar">
-            <input type="reset" name="Limpiar">
-        </fieldset>
-        </form>
-    </p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is my first webpage">
+        <meta name="keywords" content="coding, html, programming, web design,
+            internet">
+        <meta name="author" content="Student">
+        <meta name="generator" content="VS CODE">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" type="image/png" href="../img/robot.png" sizes="32x32">
+        <title>Formularios</title>
+    </head>
+    <body>
+        <h2>Formulario de datos</h2>
+        <p>
+            <form name="Datos Personales">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" size="15" maxlength="25"><br>
+                    </p>
+                    <p>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos" size="50" maxlength="50"><br>
+                    </p>
+                    <p>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" step="5" value="17" max="80" min="12"><br>
+                    </p>
+                    <p>
+                    <label for="fechaNac">Fecha de nacimiento:</label>
+                    <input type="date" name="fechaNac" value="2001-09-23"><br>
+                    </p>
+                    </fieldset>
+                    <fieldset>
+                    <legend>Otros Datos</legend>
+                    <p>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" name="direccion">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email"><br>
+                    </p>
+                    <p>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" name="telefono"><br>
+                    </p>
+                    <p>
+                    <label for="color">Color favorito:</label>
+                    <input type="color" name="color" value="#CA83BE"><br>
+                    </p>
+                    <p>
+                    <label for="pagInicio">Página de inicio:</label>
+                    <input type="url" name="pagInicio"><br>
+                    </p>
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Danos tu opinión</legend>
+                    <p>
+                        ¿Qué piensas de este formulario?
+                    </p>
+                    <p>
+                        <input type="radio" value="1" id="si" name="si" checked>
+                        <label for="si">¡Me encanta!</label>
+                        <input type="radio" value="2" id="no" name="si">
+                        <label for="no">No me gusta.</label>
+                        <input type="radio" value="3" id="nsnc" name="si">
+                        <label for="nsnc">No sé que decir...</label>
+                    </p>
+                    <p>
+                        <label for="o1">Informática</label>
+                        <input type="checkbox" name="o1" id="o1" value="a"><br>
+                        <label for="o2">Deportes</label>
+                        <input type="checkbox" name="o2" id="o2" value="b"><br>
+                        <label for="o3">Lectura</label>
+                        <input type="checkbox" name="o3" id="o3" value="c"><br>
+                        <label for="o4">Cine y TV</label>
+                        <input type="checkbox" name="o4" id="o4" value="d"><br>
+                    </p>
+                </fieldset>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </form>
+        </p>
+    </body>
 </html>
