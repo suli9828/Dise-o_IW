@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
     <head>
+        <title>My first Webpage</title>
         <meta charset="UTF-8">
         <meta name="description" content="This is my first webpage">
         <meta name="keywords" content="coding, html, programming, web design,
@@ -10,142 +11,162 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
         <link rel="icon" type="image/png" href="../img/robot.png" sizes="32x32">
-        <title>Formularios</title>
+        <style>
+            span{
+                color: red;
+            }
+            .p1{
+                font-size: 45px;            
+            }
+        </style>
     </head>
     <body>
-        <h2>Formulario de datos</h2>
+
+        <h1>A barrier of fear has been broken in Iran. The regime may be at a
+            point of no return</h1>
+        <p>A woman <span>dressed</span> in <strong>black raises</strong> a
+            framed portrait of her son, <em> Siavash Mahmoudi</em>,
+            in the air as she paces the sidewalk in Iran’s <del>capital</del>,
+            Tehran. “I am not scared of anyone. They told me to be silent. I
+            will not be,” <u>the woman seen in a viral</u> social media video
+            yells,
+            her voice fraught with emotion. “I will carry my son’s picture
+            everywhere. They killed him.” Mahmoudi’s mother is among many
+            Iranians who claim the regime tried to silence them as they mourned
+            loved ones slain in ongoing <mark>nationwide demonstrations</mark>.
+        </p>
+        <p class="parrafo2">
+            Hello bro
+        </p>
+        <pre>
+            This is a sample test.
+                It will respect the format.
+            Nice!    
+        </pre>
+        <p class="p1">
+            Mi palabra favorita es &shyesterno&shycleido&shymastoi&shydeo y la
+            verdad es que está muy bien.
+        </p>
         <p>
-            <form name="Datos Personales">
-                <fieldset>
-                    <legend>Datos Personales</legend>
-                    <p>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre" size="15"
-                            maxlength="25" spellcheck="false"><br>
-                    </p>
-                    <p>
-                        <label for="apellidos">Apellidos:</label>
-                        <input type="text" name="apellidos" size="50"
-                            maxlength="50" placeholder="Introduce tus dos apellidos" spellcheck="false"><br>
-                    </p>
-                    <p>
-                        <label for="edad">Edad:</label>
-                        <input type="number" name="edad" step="5" value="17"
-                            max="80" min="12"><br>
-                    </p>
-                    <p>
-                        <label for="fechaNac">Fecha de nacimiento:</label>
-                        <input type="date" name="fechaNac" value="2001-09-23"><br>
-                    </p>
-                </fieldset>
-                <fieldset>
-                    <legend>Otros Datos</legend>
-                    <p>
-                        <label for="direccion">Dirección:</label>
-                        <input type="text" name="direccion">
-                        <label for="email">E-mail:</label>
-                        <input type="email" name="email" autofocus><br>
-                    </p>
-                    <p>
-                        <label for="telefono">Teléfono:</label>
-                        <input type="text" name="telefono"><br>
-                    </p>
-                    <p>
-                        <label for="color">Color favorito:</label>
-                        <input type="color" name="color" value="#CA83BE"><br>
-                    </p>
-                    <p>
-                        <label for="pagInicio">Página de inicio:</label>
-                        <input type="url" name="pagInicio"><br>
-                    </p>
-                    <br>
-                </fieldset>
-                <fieldset>
-                    <legend>Danos tu opinión</legend>
-                    <p>
-                        ¿Qué piensas de este formulario?
-                    </p>
-                    <p>
-                        <input type="radio" value="1" id="si" name="si" checked>
-                        <label for="si">¡Me encanta!</label>
-                        <input type="radio" value="2" id="no" name="si">
-                        <label for="no">No me gusta.</label>
-                        <input type="radio" value="3" id="nsnc" name="si">
-                        <label for="nsnc">No sé que decir...</label>
-                    </p>
-                    <p>
-                        <label for="o1">Informática</label>
-                        <input type="checkbox" name="o1" id="o1" value="a"
-                            checked><br>
-                        <label for="o2">Deportes</label>
-                        <input type="checkbox" name="o2" id="o2" value="b"><br>
-                        <label for="o3">Lectura</label>
-                        <input type="checkbox" name="o3" id="o3" value="c"><br>
-                        <label for="o4">Cine y TV</label>
-                        <input type="checkbox" name="o4" id="o4" value="d"><br>
-                    </p>
-                </fieldset>
-                <fieldset>
-                    <legend>Un par de listas desplegables</legend>
-                    <p>
-                        <label for="lista1">Asignatura favorita: </label>
-                        <select name="lista1" id="lista1" required>
-                            <option value="" selected disabled hidden>--
-                                Selecciona una asignatura --</option>
-                            <option value="l1">Diseño de Interfaces Web</option>
-                            <option value="l2">Sistemas Informáticos</option>
-                            <option value="l3">Despliegue</option>
-                            <option value="l4">Entorno Cliente</option>
-                            <option value="l5">Entorno Servidor</option>
-                            <option value="l6">Empresa</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="lista2">Mes favorito.</label>
-                        <select name="lista2" id="lista2">
-                            <option value="" selected disabled hidden>--
-                                Selecciona un mes --</option>
-                            <optgroup label="Primavera">
-                                <option value="p1">Marzo</option>
-                                <option value="p2">Abril</option>
-                                <option value="p3">Mayo</option>
-                            </optgroup>
-                            <optgroup label="Verano">
-                                <option value="v1">Junio</option>
-                                <option value="v2">Julio</option>
-                                <option value="v3">Agosto</option>
-                            </optgroup>
-                            <optgroup label="Otoño">
-                                <option value="o1">Septiembre</option>
-                                <option value="o2">Octubre</option>
-                                <option value="o3">Noviembre</option>
-                            </optgroup>
-                            <optgroup label="Invierno">
-                                <option value="i1">Diciembre</option>
-                                <option value="i2">Enero</option>
-                                <option value="i3">Febrero</option>
-                            </optgroup>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="lista3">Provincia andaluza favorita:</label>
-                        <input list="lista3" id="milista" name="milista">
-                        <datalist id="lista3">
-                            <option value="p1">Cádiz</option>
-                            <option value="p2">Málaga</option>
-                            <option value="p3">Sevilla</option>
-                            <option value="p4">Córdoba</option>
-                            <option value="p5">Huelva</option>
-                            <option value="p6">Granada</option>
-                            <option value="p7">Jaén</option>
-                            <option value="p8">Almería</option>
-                        </datalist>
-                    </p>
-                </fieldset>
-                <br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpiar">
-            </form>
+            Infórmate en https://developer.mozilla.org/<wbr>es/docs/Web/<wbr>CSS/<wbr>Class_selectors
+        </p>
+        <p>
+            Mi etiqueta <abbr title="HyperText Markup Language">HTML</abbr>
+            preferida es &lt;<strong>strong</strong>&gt; y está guay.
+        </p>
+        <p>
+            Descarguemos un archivo <a href="../prueba.pdf" download
+                rel="external">AQUI</a>
+        </p>
+        <p>
+            <details>
+                <summary>Despliega nuestros datos!</summary>
+                <h2>Increibles detalles</h2>
+                <p>
+                    Esto es un parrafo dentro de la etiqueta details.
+                </p>
+                <hr>
+            </details>
+        </p>
+        <p>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Otro elemento</li>
+                <li>Tercer elemento</li>
+                <li>Final de lista</li>
+            </ul>
+            <ol reversed>
+                <li>Elemento 1</li>
+                <li>Otro elemento</li>
+                <li>Tercer elemento</li>
+                <li>Final de lista</li>
+            </ol>
+            <ol type="A">
+                <li>Elemento 1</li>
+                <li>Otro elemento</li>
+                <li>Tercer elemento</li>
+                <li>Final de lista</li>
+            </ol>
+        </p>
+        <p>
+            <dt>Término 1</dt>
+            <dd>Esta es la definicion del termino 1</dd>
+            <dt>Término 2</dt>
+            <dd>Esta es la definicion del termino 2</dd>
+        </p>
+        <p>
+            <blockquote>El mal es una enfermedad presente a lo largo de la
+                historia. Desgraciadamente el ser humano no tiene la capacidad
+                de expresar su bondad como cualquiera.</blockquote>
+        </p>
+        <p>
+            <img src="../img/html.png" width="150" height="150" alt="Imagen de
+                HTML 5">
+        </p>
+        <p>
+            <img src="../img/salon.jpg" width="850" height="600" alt="Salón de
+                una casa" usemap="#mimapa">
+
+            <map name="mimapa">
+                <area shape="rect" coords="597,330,657,437" alt="Cojin"
+                    href="https://www.casaviva.es/salon/textil-de-salon/cojines/">
+            </map>
+        </p>
+        <p>
+            <picture>
+                <source media="(min-width:1000px)" srcset="../img/earth.jpg">
+                <source media="(min-width:600px)" srcset="../img/earth-med.jpg">
+                <source media="(min-width:320px)" srcset="../img/earth-peq.jpg">
+                <img src="../img/earth.jpg">
+            </picture>
+        </p>
+        <p>
+            <figure>
+                <img src="../img/earth-peq.jpg">
+                <figcaption>Esta es una imagen de la tierra.</figcaption>
+            </figure>
+        </p>
+        <p>
+            <table border="1">
+                <tr>
+                    <td colspan="2">1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td rowspan="2">3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            <table border="2">
+                <tr>
+                    <td rowspan="2">a</td>
+                    <td colspan="2">b</td>
+                </tr>
+                <tr>
+                    <td>c</td>
+                    <td>d</td>
+                </tr>
+                <tr>
+                    <td>e</td>
+                    <td>f</td>
+                    <td rowspan="2">g</td>
+                </tr>
+                <tr>
+                    <td colspan="2">h</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/M1-YeqGynlw" title="YouTube
+                video player" frameborder="0" allow="accelerometer; autoplay;
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
         </p>
     </body>
 </html>
