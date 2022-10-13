@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="This is my first webpage">
@@ -19,41 +19,44 @@
                 <fieldset>
                     <legend>Datos Personales</legend>
                     <p>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" size="15" maxlength="25"><br>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" size="15"
+                            maxlength="25" spellcheck="false"><br>
                     </p>
                     <p>
-                    <label for="apellidos">Apellidos:</label>
-                    <input type="text" name="apellidos" size="50" maxlength="50"><br>
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" name="apellidos" size="50"
+                            maxlength="50" placeholder="Introduce tus dos apellidos" spellcheck="false"><br>
                     </p>
                     <p>
-                    <label for="edad">Edad:</label>
-                    <input type="number" name="edad" step="5" value="17" max="80" min="12"><br>
+                        <label for="edad">Edad:</label>
+                        <input type="number" name="edad" step="5" value="17"
+                            max="80" min="12"><br>
                     </p>
                     <p>
-                    <label for="fechaNac">Fecha de nacimiento:</label>
-                    <input type="date" name="fechaNac" value="2001-09-23"><br>
+                        <label for="fechaNac">Fecha de nacimiento:</label>
+                        <input type="date" name="fechaNac" value="2001-09-23"><br>
                     </p>
-                    </fieldset>
-                    <fieldset>
+                </fieldset>
+                <fieldset>
                     <legend>Otros Datos</legend>
                     <p>
-                    <label for="direccion">Dirección:</label>
-                    <input type="text" name="direccion">
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="email"><br>
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" name="direccion">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" autofocus><br>
                     </p>
                     <p>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="text" name="telefono"><br>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" name="telefono"><br>
                     </p>
                     <p>
-                    <label for="color">Color favorito:</label>
-                    <input type="color" name="color" value="#CA83BE"><br>
+                        <label for="color">Color favorito:</label>
+                        <input type="color" name="color" value="#CA83BE"><br>
                     </p>
                     <p>
-                    <label for="pagInicio">Página de inicio:</label>
-                    <input type="url" name="pagInicio"><br>
+                        <label for="pagInicio">Página de inicio:</label>
+                        <input type="url" name="pagInicio"><br>
                     </p>
                     <br>
                 </fieldset>
@@ -72,13 +75,71 @@
                     </p>
                     <p>
                         <label for="o1">Informática</label>
-                        <input type="checkbox" name="o1" id="o1" value="a"><br>
+                        <input type="checkbox" name="o1" id="o1" value="a"
+                            checked><br>
                         <label for="o2">Deportes</label>
                         <input type="checkbox" name="o2" id="o2" value="b"><br>
                         <label for="o3">Lectura</label>
                         <input type="checkbox" name="o3" id="o3" value="c"><br>
                         <label for="o4">Cine y TV</label>
                         <input type="checkbox" name="o4" id="o4" value="d"><br>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Un par de listas desplegables</legend>
+                    <p>
+                        <label for="lista1">Asignatura favorita: </label>
+                        <select name="lista1" id="lista1" required>
+                            <option value="" selected disabled hidden>--
+                                Selecciona una asignatura --</option>
+                            <option value="l1">Diseño de Interfaces Web</option>
+                            <option value="l2">Sistemas Informáticos</option>
+                            <option value="l3">Despliegue</option>
+                            <option value="l4">Entorno Cliente</option>
+                            <option value="l5">Entorno Servidor</option>
+                            <option value="l6">Empresa</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="lista2">Mes favorito.</label>
+                        <select name="lista2" id="lista2">
+                            <option value="" selected disabled hidden>--
+                                Selecciona un mes --</option>
+                            <optgroup label="Primavera">
+                                <option value="p1">Marzo</option>
+                                <option value="p2">Abril</option>
+                                <option value="p3">Mayo</option>
+                            </optgroup>
+                            <optgroup label="Verano">
+                                <option value="v1">Junio</option>
+                                <option value="v2">Julio</option>
+                                <option value="v3">Agosto</option>
+                            </optgroup>
+                            <optgroup label="Otoño">
+                                <option value="o1">Septiembre</option>
+                                <option value="o2">Octubre</option>
+                                <option value="o3">Noviembre</option>
+                            </optgroup>
+                            <optgroup label="Invierno">
+                                <option value="i1">Diciembre</option>
+                                <option value="i2">Enero</option>
+                                <option value="i3">Febrero</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="lista3">Provincia andaluza favorita:</label>
+                        <input list="lista3" id="milista" name="milista">
+                        <datalist id="lista3">
+                            <option value="p1">Cádiz</option>
+                            <option value="p2">Málaga</option>
+                            <option value="p3">Sevilla</option>
+                            <option value="p4">Córdoba</option>
+                            <option value="p5">Huelva</option>
+                            <option value="p6">Granada</option>
+                            <option value="p7">Jaén</option>
+                            <option value="p8">Almería</option>
+                        </datalist>
                     </p>
                 </fieldset>
                 <br>
