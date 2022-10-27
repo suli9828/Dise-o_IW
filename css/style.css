@@ -1,0 +1,26 @@
+body {
+    background-color: bisque;
+}
+
+h1 {
+    color: darkorchid;
+    background-color: darkgray;
+}
+
+ol.iswhere li {
+    color: lightgreen;
+}
+
+:where(ol.iswhere, ul.iswhere) li{
+    color:fuchsia;
+    font-family: monospace;
+    font-size: 1.3em;
+}
+
+.visitedlink a:link{
+    color: brown;
+}
+
+.visitedlink a:visited{
+    color: chartreuse;
+}
