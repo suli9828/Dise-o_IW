@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Post album form</title>
-        <meta charset="UTF-8">
-        <meta name="author" content="Student">
-        <meta name="generator" content="VS CODE">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="../Proyecto Tema 2 /img/disco.png" sizes="32x32">
-    </head>
-    <body>
-        <h2>Formulario</h2>
-        <p>
-            <form name="Datos Personales" action="datos.php" method="post">
-                <fieldset>
-                    <legend>Datos Personales</legend>
-                    <p>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" size="15" maxlength="25"><br>
-                    </p>
-                    <p>
-                    <label for="apellidos">Apellidos:</label>
-                    <input type="text" name="apellidos" size="50" maxlength="50"><br>
-                    </p>
-                    <p>
-                    <label for="direccion">Dirección:</label>
-                    <input type="text" name="direccion" value="" max="80" min="12"><br>
-                    </p>
-                    <p>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="text" name="telefono" value=""><br>
-                    </p>
-                    </fieldset>
-                <br>
-                <input type="submit" name="enviar" value="Enviar">
-                <input type="reset" value="Limpiar">
-            </form>
-        </p>
-    </body>
+
+<head>
+    <title>Post an album</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Student">
+    <meta name="generator" content="VS CODE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../Proyecto Tema 2 /img/disco.png" sizes="32x32">
+</head>
+
+<body>
+    <h2>Post an album</h2>
+    <p>
+    <form name="Album details" action="dataform.php" method="post">
+        <fieldset>
+            <legend>Album details</legend>
+            <p>
+                <label for="name">Name of the album:</label>
+                <input type="text" name="name" size="20" maxlength="25"><br>
+            </p>
+            <p>
+                <label for="artist">Artist/s:</label>
+                <input type="text" name="artist" size="25" maxlength="50"><br>
+            </p>
+            <p>
+                <label for="price">Price:</label>
+                <input type="number" name="price" value=""><br>
+            </p>
+            <p>
+                <label for="fee">Fee:</label>
+                <input type="number" name="fee" value="" max="15" min="4"><br>
+            </p>
+        </fieldset>
+        <br>
+        <input type="submit" name="enviar" value="Post">
+        <input type="reset" value="Reset values">
+    </form>
+    </p>
+</body>
+
 </html>
