@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ejercicio 1</title>
+    <script src="https://kit.fontawesome.com/2aa1d70c63.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="coding, html, programming, web design, internet" />
+    <meta name="author" content="Sulaiman" />
+    <meta name="generator" content="VS CODE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/ej1.css" />
+</head>
+
+<body>
+    <h1>Introduzca datos</h1>
+    <p>
+    <form name="Datos Personales">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" size="15" maxlength="25" required><br>
+            </p>
+            <p>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" name="apellidos" size="50" maxlength="50" required><br>
+            </p>
+            <p>
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" value="15" max="80" min="5"><br>
+            </p>
+            <p>
+                <label for="fechaNac">Fecha de nacimiento:</label>
+                <input type="date" name="fechaNac" value="2001-09-23"><br>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Otros Datos</legend>
+            <p>
+                <label for="direccion">Dirección:</label>
+                <input type="text" name="direccion">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email"><br>
+            </p>
+            <p>
+                <label for="telefono">Teléfono:</label>
+                <input type="text" name="telefono"><br>
+            </p>
+            <p>
+                <label for="color">Color favorito:</label>
+                <input type="color" name="color" value="#CA83BE"><br>
+            </p>
+            <p>
+                <label for="pagInicio">Página de inicio:</label>
+                <input type="url" name="pagInicio"><br>
+            </p>
+            <br>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+</body>
+
+</html>
