@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sulaiman">
+    <meta name="generator" content="VS CODE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input your data form</title>
+</head>
+
+<body>
+    <form name="form" method="post" action="./data.php">
+        <h1>Please input your data</h1>
+        <fieldset>
+            <fieldset>
+                <legend>Title:</legend>
+                <input type="radio" name="Title" id="Ms" value="A">
+                <label for="Title">Ms.</label>
+                <input type="radio" name="Title" id="Mrs" value="B">
+                <label for="Title">Mrs.</label>
+                <input type="radio" name="Title" id="Mr" value="C">
+                <label for="Title">Mr.</label>
+                <input type="radio" name="Title" id="Dr" value="D">
+                <label for="Title">Dr.</label>
+                <input type="radio" name="Title" id="Mx" value="E">
+                <label for="Title">Mx.</label>
+                <input type="radio" name="Title" id="Ind" value="F" checked>
+                <label for="Title">Ind.</label>
+            </fieldset>
+            <legend>Personal information</legend>
+            <p>
+                <label for="name">First Name:</label>
+                <input type="text" name="name" id="name" size="15" maxlength="10" required autofocus=""
+                    pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü-]+">
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" size="25" maxlength="40" required
+                    pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü-]+">
+            </p>
+            <p>
+                <label for="birth">Birthdate:</label>
+                <input type="date" name="birth" id="birth" required>
+            </p>
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü-]+">
+            <label for="region">Region:</label>
+            <select name="region" id="region">
+                <option value="" selected>--Please select--</option>
+                <optgroup label="North">
+                    <option value="Durham">Durham</option>
+                    <option value="Northumberland">Northumberland</option>
+                    <option value="Lancashire">Lancashire</option>
+                </optgroup>
+                <optgroup label="Center">
+                    <option value="YoYorkshirerk">Yorkshire</option>
+                    <option value="Chesire">Chesire</option>
+                    <option value="Rutland">Rutland</option>
+                    <option value="WestMidlands">West Midlands</option>
+                </optgroup>
+                <optgroup label="South">
+                    <option value="Kent">Kent</option>
+                    <option value="Essex">Essex</option>
+                    <option value="Dorset">Dorset</option>
+                    <option value="Devon">Devon</option>
+                    <option value="Cornwall">Cornwall</option>
+                </optgroup>
+            </select>
+            <label for="code">Postcode:</label>
+            <input type="text" name="code" id="code" size="5" pattern="[0-9]{5}">
+            <label for="regional">Regional code:</label>
+            <input type="text" name="regional" id="regional" size="8"
+                oninvalid="this.setCustomValidity('The Regional Code should begin with a capital letter and end with 2 capital letters, one of them being N,S or W.')">
+        </fieldset>
+        <fieldset>
+            <legend>Subscription information</legend>
+            <p>
+                <label for="subs">Subscription type:</label>
+                <input type="text" list="sublist">
+                <datalist id="sublist" name="subs" spellcheck="false" autocomplete="">
+                    <option value="D">Daily Subscription</option>
+                    <option value="W">Weekly Subscription</option>
+                    <option value="Q">Quarterly Subscription</option>
+                    <option value="M">Monthly Subscription</option>
+                    <option value="Y">Yearly Subscription</option>
+                    <option value="U">Unlimited Subscription</option>
+                </datalist>
+                <label for="sub">Subscription code:</label>
+                <input type="text" name="sub" id="sub" size="8" pattern="(?=.*[0-9][05])[\w]{4,}">
+            </p>
+            <fieldset>
+                <legend>Areas of interest:</legend>
+                <input type="checkbox" name="Science" id="Science" value="a">
+                <label for="Science">Science</label>
+                <input type="checkbox" name="Arts" id="Arts" value="b">
+                <label for="Arts">Arts and Crafts</label>
+                <input type="checkbox" name="Literature" id="Literature" value="c">
+                <label for="Literature">Literature</label>
+                <input type="checkbox" name="Technology" id="Technology" value="d">
+                <label for="Technology">Technology and Gadgets</label>
+                <input type="checkbox" name="Improvement" id="Improvement" value="e">
+                <label for="Improvement">Self Improvement</label>
+            </fieldset>
+            <p>
+                <label for="pass">Username:</label>
+                <input type="text" name="user" id="user" size="25" placeholder="valid username"
+                    pattern="(?!.*(\.\.).*)[a-z0-9_][a-z0-9_\.]{2,14}[a-z0-9_]">
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" id="pass" size="15" required placeholder="password"
+                    pattern="(?!.*(00|11|22|33|44|55|66|77|88|99).*)(?=.*[a-z].*)(?=.*[A-Z].*)(?=.*[0-9].*)[a-zA-Z0-9].{6,}[a-zA-Z0-9]"
+                    oninvalid="alert('Your password must contain uppercase characters, lowercase characters, special characters and digits (not repeating in consecutive positions). Also, it cannot begin or end with a special character and it must be at least 8 characters long. Thanks for your understanding.')">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Billing details</legend>
+            <p>
+                <label for="card">Credit Card Type:</label>
+                <select name="card" id="card" required>
+                    <option value="" selected disabled>--Please select--</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Master">MasterCard</option>
+                    <option value="Maestro">Maestro</option>
+                </select>
+                <label for="number">Card Number:</label>
+                <input type="text" name="number" id="number" size="20" required
+                    pattern="([0-9]{16})|(([0-9]{4}[\s]){3}[0-9]{4})">
+            </p>
+            <p>
+                <label for="discount">If you have a discount code please enter it here:</label>
+                <input type="text" name="discount" id="discount" size="20" placeholder="code"
+                    pattern="(?=.{5}$)(?!.*(11|22|33|00))([A-Z]{3}[12|13|21|23|31|32]+)">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Feedback</legend>
+            <p>
+                <label for="suggestions">We would love to hear your suggestions to improve our site:
+                </label><br><br>
+                <textarea name="suggestions" id="suggestions" rows="5" cols="70" spellcheck="true"></textarea>
+            </p>
+        </fieldset>
+        </fieldset>
+        <p>
+            <input type="submit" value="Send data">
+        </p>
+    </form>
+</body>
+
+</html>
