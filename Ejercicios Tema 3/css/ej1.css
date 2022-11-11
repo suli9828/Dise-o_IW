@@ -1,5 +1,5 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, monospace, sans-serif;
   font-weight: 600;
 }
 
@@ -30,6 +30,20 @@ div.todo fieldset label {
   color: forestgreen;
 }
 
+div.todo fieldset label.check1 {
+  color: teal;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+div.todo fieldset.cajaedad {
+  margin-right: 30vw;
+}
+
+div.todo fieldset.cajaintereses {
+  margin-right: 30vw;
+}
+
 div.todo fieldset input {
   background-color: mistyrose;
 }
@@ -40,6 +54,7 @@ div.todo fieldset input.codigo {
 
 div.todo fieldset input.porcentaje {
   background-color: rgb(255, 253, 198);
+  size: 100;
 }
 
 div.todo fieldset input {
@@ -52,8 +67,12 @@ div.todo fieldset input:focus {
   outline: none;
 }
 
+div.todo p label.color {
+  color: rebeccapurple;
+}
+
 ::placeholder {
-  color: coral;
+  color: palevioletred;
   font-style: Italic;
 }
 
@@ -84,13 +103,12 @@ div.todo form > p:last-child {
   text-align: center;
 }
 
-div.todo fieldset:last-of-type p input[type='checkbox']:nth-last-of-type(3) {
+div.todo fieldset p input[type='checkbox']:nth-last-of-type(3) {
   box-shadow: 3px 3px 4px orangered;
 }
 
 div.todo form > p input {
   padding: 8px;
-  color: peachpuff;
   background-color: rgb(255, 253, 198);
   box-shadow: 2px 2px gray;
   border: none;
@@ -99,11 +117,13 @@ div.todo form > p input {
 
 div.todo form > p:last-child input:first-child {
   color: cornflowerblue;
+  font-size: medium;
 }
 
 div.todo form > p:last-child input:last-child {
   color: gray;
   font-weight: 100;
+  font-size: medium;
 }
 
 input.enviar {
