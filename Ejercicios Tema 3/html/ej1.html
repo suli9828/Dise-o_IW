@@ -26,7 +26,7 @@
                     <label for="apellidos">Apellidos:</label> <input type="text" name="apellidos"
                         placeholder="Obligatorio" required size="40" /> <br />
                 <p>
-                <fieldset>
+                <fieldset class="cajaedad">
                     <legend>Edad:</legend>
                     <input type="radio" name="edad" /><label for="edad">18 a 25</label>
                     <input type="radio" name="edad" /><label for="edad">26 a 35</label>
@@ -37,16 +37,16 @@
                 </fieldset>
                 </p>
                 <p>
-                <fieldset>
+                <fieldset class="cajaintereses">
                     <legend>Intereses:</legend>
-                    <label for="check1">Arte y Literatura</label><input type="checkbox" name="check1" /><br />
-                    <label for="check1">Ciencia y Tecnología</label><input type="checkbox" name="check1" /><br />
-                    <label for="check1">Política y Sociedad</label><input type="checkbox" name="check1" /><br />
-                    <label for="check1">Ocio y Deporte</label><input type="checkbox" name="check1" /><br />
-                    <label for="check1">Cine y Televisión</label><input type="checkbox" name="check1" /><br />
+                    <label for="check1" class="check1">Arte y Literatura</label><input type="checkbox" name="check1" /><br />
+                    <label for="check1" class="check1">Ciencia y Tecnología</label><input type="checkbox" name="check1" /><br />
+                    <label for="check1" class="check1">Política y Sociedad</label><input type="checkbox" name="check1" /><br />
+                    <label for="check1" class="check1">Ocio y Deporte</label><input type="checkbox" name="check1" /><br />
+                    <label for="check1" class="check1">Cine y Televisión</label><input type="checkbox" name="check1" /><br />
                 </fieldset>
                 </p>
-                <label for="codigo">Codigo postal:</label> <input type="text" name="codigo" class="codigo"
+                <label for="codigo">Codigo postal:</label> <input type="text" size="10" name="codigo" class="codigo"
                     pattern="\d{5}" />
                 </p>
             </fieldset>
@@ -56,10 +56,10 @@
                 <legend>Otros datos</legend>
                 <p class="titulo">Color favorito</p>
                 <p>
-                    <input type="radio" name="color" /><label for="color">Rojo</label>
-                    <input type="radio" name="color" /><label for="color">Azul</label>
-                    <input type="radio" name="color" /><label for="color">Amarillo</label>
-                    <input type="radio" name="color" /><label for="color">Verde</label>
+                    <input type="radio" name="color" checked /><label for="color" class="color">Rojo</label>
+                    <input type="radio" name="color" /><label for="color" class="color">Azul</label>
+                    <input type="radio" name="color" /><label for="color" class="color">Amarillo</label>
+                    <input type="radio" name="color" /><label for="color" class="color">Verde</label>
                 </p>
                 <p class="titulo">Asignaturas favoritas</p>
                 <p>
@@ -71,7 +71,7 @@
                 </p>
                 <p class="titulo">Probabilidad de aprobar</p>
                 <p>
-                    <label for="porcentaje">Porcentaje</label> <input type="number" name="porcentaje" class="porcentaje"
+                    <label for="porcentaje">Porcentaje</label> <input type="number" size="10" name="porcentaje" class="porcentaje"
                         value="50" step="5" min="0" max="100">
                 </p>
             </fieldset>
