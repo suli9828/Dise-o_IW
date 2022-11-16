@@ -12,7 +12,7 @@
 
 body {
   background-color: var(--color_texto);
-  background-image: url('./back1.jpg');
+  background-image: url('../img/back1.jpg');
 }
 
 h1 {
