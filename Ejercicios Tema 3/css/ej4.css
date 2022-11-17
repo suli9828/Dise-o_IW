@@ -9,80 +9,85 @@
   --color_borde: #dd0a85;
   --color_sombra: whitesmoke;
 
-  --color1_1: rgb(1, 21, 1);
-  --color1_2: rgb(45, 8, 96);
-  --color1_3: rgb(209, 76, 186);
-  --color1_4: rgb(254, 183, 183);
-  --color1_5: rgb(239, 214, 75);
-  --color1_6: rgb(239, 239, 182);
-  --color1_7: rgb(248, 212, 244);
-  --color1_8: rgb(220, 118, 193);
-  --color1_9: rgb(255, 255, 255);
-
-  --color2_1: rgb(234, 62, 62);
-  --color2_2: rgb(247, 115, 0);
-  --color2_3: rgb(243, 220, 42);
-  --color2_4: rgb(93, 195, 65);
-  --color2_5: rgb(83, 87, 174);
-  --color2_6: rgb(163, 84, 161);
-  --color2_7: rgb(234, 161, 216);
-  --color2_8: rgb(235, 203, 203);
+  /* Animación Cascada */
 
   --tiempo_anim1: 2s;
-  --tiempo_anim2: 2s;
 
-  --delay1: 300ms;
-  --delay2: calc(var(--delay1) * 2);
-  --delay3: calc(var(--delay1) * 3);
-  --delay4: calc(var(--delay1) * 4);
-  --delay5: calc(var(--delay1) * 5);
-  --delay6: calc(var(--delay1) * 6);
-  --delay7: calc(var(--delay1) * 7);
-  --delay8: calc(var(--delay1) * 8);
-  --delay9: calc(var(--delay1) * 9);
-  --delay10: calc(var(--delay1) * 10);
-  --delay11: calc(var(--delay1) * 11);
-  --delay12: calc(var(--delay1) * 12);
-  --delay13: calc(var(--delay1) * 13);
-  --delay14: calc(var(--delay1) * 14);
-  --delay15: calc(var(--delay1) * 15);
+  --color1_1: rgb(24, 2, 35);
+  --color1_2: rgb(144, 28, 165);
+  --color1_3: rgb(225, 87, 187);
+  --color1_4: rgb(235, 168, 106);
+  --color1_5: rgb(233, 213, 140);
+  --color1_6: rgb(223, 178, 177);
+  --color1_7: rgb(208, 112, 166);
+  --color1_8: rgb(224, 163, 192);
+  --color1_9: rgb(255, 255, 255);
 
-  --aniCas1: animacionAbajo var(--tiempo_anim2) linear var(--delay1) 1 normal
-    forwards;
-  --aniCas2: animacionAbajo var(--tiempo_anim2) linear var(--delay2) 1 normal
-    forwards;
-  --aniCas3: animacionAbajo var(--tiempo_anim2) linear var(--delay3) 1 normal
-    forwards;
-  --aniCas4: animacionAbajo var(--tiempo_anim2) linear var(--delay4) 1 normal
-    forwards;
-  --aniCas5: animacionAbajo var(--tiempo_anim2) linear var(--delay5) 1 normal
-    forwards;
-  --aniCas6: animacionAbajo var(--tiempo_anim2) linear var(--delay6) 1 normal
-    forwards;
-  --aniCas7: animacionAbajo var(--tiempo_anim2) linear var(--delay7) 1 normal
-    forwards;
-  --aniCas8: animacionAbajo var(--tiempo_anim2) linear var(--delay8) 1 normal
-    forwards;
+  --delay1_1: calc(var(--tiempo_anim1) / 10);
+  --delay1_2: calc(var(--delay1_1) + var(--delay1_1));
+  --delay1_3: calc(var(--delay1_2) + var(--delay1_1));
+  --delay1_4: calc(var(--delay1_3) + var(--delay1_1));
+  --delay1_5: calc(var(--delay1_4) + var(--delay1_1));
+  --delay1_6: calc(var(--delay1_5) + var(--delay1_1));
+  --delay1_7: calc(var(--delay1_6) + var(--delay1_1));
+  --delay1_8: calc(var(--delay1_7) + var(--delay1_1));
 
-  --tiempo_anim3: 10s;
-  --tiempo_anim4: 10s;
+  --animCas1: animacionCascada var(--tiempo_anim1) forwards;
+  --animCas2: animacionCascada var(--tiempo_anim1) var(--delay1_1) forwards;
+  --animCas3: animacionCascada var(--tiempo_anim1) var(--delay1_2) forwards;
+  --animCas4: animacionCascada var(--tiempo_anim1) var(--delay1_3) forwards;
+  --animCas5: animacionCascada var(--tiempo_anim1) var(--delay1_4) forwards;
+  --animCas6: animacionCascada var(--tiempo_anim1) var(--delay1_5) forwards;
+  --animCas7: animacionCascada var(--tiempo_anim1) var(--delay1_6) forwards;
+  --animCas8: animacionCascada var(--tiempo_anim1) var(--delay1_7) forwards;
+  --animCas9: animacionCascada var(--tiempo_anim1) var(--delay1_8) forwards;
 
-  --aniDiag1: animacionDiagonal var(--tiempo_anim3) linear var(--delay1) 1
-    normal forwards;
-  --aniDiag2: animacionDiagonal var(--tiempo_anim3) linear var(--delay2) 1
-    normal forwards;
-  --aniDiag3: animacionDiagonal var(--tiempo_anim3) linear var(--delay3) 1
-    normal forwards;
-  --aniDiag4: animacionDiagonal var(--tiempo_anim3) linear var(--delay4) 1
-    normal forwards;
-  --aniDiag5: animacionDiagonal var(--tiempo_anim3) linear var(--delay5) 1
-    normal forwards;
-  --aniDiag6: animacionDiagonal var(--tiempo_anim3) linear var(--delay6) 1
-    normal forwards;
-  --aniDiag7: animacionDiagonal var(--tiempo_anim3) linear var(--delay7) 1
-    normal forwards;
-  --aniDiag8: animacionDiagonal var(--tiempo_anim3) linear var(--delay8) 1
-    normal forwards;
+  /* Animación Diagonal */
+
+  --tiempo_anim2: 12s;
+
+  --color2_1: rgb(255, 0, 0);
+  --color2_2: rgb(255, 127, 0);
+  --color2_3: rgb(255, 255, 0);
+  --color2_4: rgb(0, 255, 0);
+  --color2_5: rgb(0, 0, 255);
+  --color2_6: rgb(148, 0, 211);
+  --color2_7: rgb(255, 135, 235);
+  --color2_8: rgb(255, 255, 255);
+
+  --delay2: (var(--tiempo_anim2) / 24);
+  --delay2_1: calc(var(--delay1_8) + var(--tiempo_anim1));
+  --delay2_2: calc(var(--delay2_1) + var(--delay2));
+  --delay2_3: calc(var(--delay2_2) + var(--delay2));
+  --delay2_4: calc(var(--delay2_3) + var(--delay2));
+  --delay2_5: calc(var(--delay2_4) + var(--delay2));
+  --delay2_6: calc(var(--delay2_5) + var(--delay2));
+  --delay2_7: calc(var(--delay2_6) + var(--delay2));
+  --delay2_8: calc(var(--delay2_7) + var(--delay2));
+  --delay2_9: calc(var(--delay2_8) + var(--delay2));
+  --delay2_10: calc(var(--delay2_9) + var(--delay2));
+  --delay2_11: calc(var(--delay2_10) + var(--delay2));
+  --delay2_12: calc(var(--delay2_11) + var(--delay2));
+  --delay2_13: calc(var(--delay2_12) + var(--delay2));
+  --delay2_14: calc(var(--delay2_13) + var(--delay2));
+  --delay2_15: calc(var(--delay2_14) + var(--delay2));
+
+  /* Animaciones */
+  --animDiag1: animacionDiagonal var(--tiempo_anim2) var(--delay2_1) infinite;
+  --animDiag2: animacionDiagonal var(--tiempo_anim2) var(--delay2_2) infinite;
+  --animDiag3: animacionDiagonal var(--tiempo_anim2) var(--delay2_3) infinite;
+  --animDiag4: animacionDiagonal var(--tiempo_anim2) var(--delay2_4) infinite;
+  --animDiag5: animacionDiagonal var(--tiempo_anim2) var(--delay2_5) infinite;
+  --animDiag6: animacionDiagonal var(--tiempo_anim2) var(--delay2_6) infinite;
+  --animDiag7: animacionDiagonal var(--tiempo_anim2) var(--delay2_7) infinite;
+  --animDiag8: animacionDiagonal var(--tiempo_anim2) var(--delay2_8) infinite;
+  --animDiag9: animacionDiagonal var(--tiempo_anim2) var(--delay2_9) infinite;
+  --animDiag10: animacionDiagonal var(--tiempo_anim2) var(--delay2_10) infinite;
+  --animDiag11: animacionDiagonal var(--tiempo_anim2) var(--delay2_11) infinite;
+  --animDiag12: animacionDiagonal var(--tiempo_anim2) var(--delay2_12) infinite;
+  --animDiag13: animacionDiagonal var(--tiempo_anim2) var(--delay2_13) infinite;
+  --animDiag14: animacionDiagonal var(--tiempo_anim2) var(--delay2_14) infinite;
+  --animDiag15: animacionDiagonal var(--tiempo_anim2) var(--delay2_15) infinite;
 }
 
 body {
@@ -96,7 +101,7 @@ h1 {
   text-align: center;
   font-family: 'Urbanist', sans-serif;
   letter-spacing: 2px;
-  font-size: 2.7em;
+  font-size: 2.3em;
   text-shadow: 1px 1px 5px var(--color_sombra),
     -1px -1px 5px var(--color_sombra);
   color: var(--color_texto);
@@ -135,250 +140,87 @@ h3 {
   width: 100px;
   height: 100px;
 }
+.casilla .casilla {
+  width: 100%;
+  height: 100%;
+}
 
 .fila1 {
-  animation: var(--aniCas1);
+  animation: var(--animCas1);
 }
-
-@keyframes animacionAbajo {
-  from {
-    background-color: var(--color1_1);
-  }
-  20% {
-    background-color: var(--color1_2);
-  }
-  30% {
-    background-color: var(--color1_3);
-  }
-  40% {
-    background-color: var(--color1_4);
-  }
-  50% {
-    background-color: var(--color1_5);
-  }
-  60% {
-    background-color: var(--color1_6);
-  }
-  70% {
-    background-color: var(--color1_7);
-  }
-  80% {
-    background-color: var(--color1_8);
-  }
-  to {
-    background-color: var(--color1_9);
-  }
-}
-
 .fila2 {
-  animation: var(--aniCas2);
+  animation: var(--animCas2);
 }
-
-@keyframes animacionAbajo {
-  from {
-    background-color: var(--color1_1);
-  }
-  20% {
-    background-color: var(--color1_2);
-  }
-  30% {
-    background-color: var(--color1_3);
-  }
-  40% {
-    background-color: var(--color1_4);
-  }
-  50% {
-    background-color: var(--color1_5);
-  }
-  60% {
-    background-color: var(--color1_6);
-  }
-  70% {
-    background-color: var(--color1_7);
-  }
-  80% {
-    background-color: var(--color1_8);
-  }
-  to {
-    background-color: var(--color1_9);
-  }
-}
-
 .fila3 {
-  animation: var(--aniCas3);
+  animation: var(--animCas3);
 }
-
-@keyframes animacionAbajo {
-  from {
-    background-color: var(--color1_1);
-  }
-  20% {
-    background-color: var(--color1_2);
-  }
-  30% {
-    background-color: var(--color1_3);
-  }
-  40% {
-    background-color: var(--color1_4);
-  }
-  50% {
-    background-color: var(--color1_5);
-  }
-  60% {
-    background-color: var(--color1_6);
-  }
-  70% {
-    background-color: var(--color1_7);
-  }
-  80% {
-    background-color: var(--color1_8);
-  }
-  to {
-    background-color: var(--color1_9);
-  }
-}
-
 .fila4 {
-  animation: var(--aniCas4);
+  animation: var(--animCas4);
 }
-
-@keyframes animacionAbajo {
-  from {
-    background-color: var(--color1_1);
-  }
-  20% {
-    background-color: var(--color1_2);
-  }
-  30% {
-    background-color: var(--color1_3);
-  }
-  40% {
-    background-color: var(--color1_4);
-  }
-  50% {
-    background-color: var(--color1_5);
-  }
-  60% {
-    background-color: var(--color1_6);
-  }
-  70% {
-    background-color: var(--color1_7);
-  }
-  80% {
-    background-color: var(--color1_8);
-  }
-  to {
-    background-color: var(--color1_9);
-  }
-}
-
 .fila5 {
-  animation: var(--aniCas5);
+  animation: var(--animCas5);
 }
-
-@keyframes animacionAbajo {
-  from {
-    background-color: var(--color1_1);
-  }
-  20% {
-    background-color: var(--color1_2);
-  }
-  30% {
-    background-color: var(--color1_3);
-  }
-  40% {
-    background-color: var(--color1_4);
-  }
-  50% {
-    background-color: var(--color1_5);
-  }
-  60% {
-    background-color: var(--color1_6);
-  }
-  70% {
-    background-color: var(--color1_7);
-  }
-  80% {
-    background-color: var(--color1_8);
-  }
-  to {
-    background-color: var(--color1_9);
-  }
-}
-
 .fila6 {
-  animation: var(--aniCas6);
+  animation: var(--animCas6);
 }
-
-@keyframes animacionAbajo {
-  from {
-    background-color: var(--color1_1);
-  }
-  20% {
-    background-color: var(--color1_2);
-  }
-  30% {
-    background-color: var(--color1_3);
-  }
-  40% {
-    background-color: var(--color1_4);
-  }
-  50% {
-    background-color: var(--color1_5);
-  }
-  60% {
-    background-color: var(--color1_6);
-  }
-  70% {
-    background-color: var(--color1_7);
-  }
-  80% {
-    background-color: var(--color1_8);
-  }
-  to {
-    background-color: var(--color1_9);
-  }
-}
-
 .fila7 {
-  animation: var(--aniCas7);
+  animation: var(--animCas7);
 }
-
-@keyframes animacionAbajo {
-  from {
-    background-color: var(--color1_1);
-  }
-  20% {
-    background-color: var(--color1_2);
-  }
-  30% {
-    background-color: var(--color1_3);
-  }
-  40% {
-    background-color: var(--color1_4);
-  }
-  50% {
-    background-color: var(--color1_5);
-  }
-  60% {
-    background-color: var(--color1_6);
-  }
-  70% {
-    background-color: var(--color1_7);
-  }
-  80% {
-    background-color: var(--color1_8);
-  }
-  to {
-    background-color: var(--color1_9);
-  }
-}
-
 .fila8 {
-  animation: var(--aniCas8);
+  animation: var(--animCas8);
+}
+.fila9 {
+  animation: var(--animCas9);
 }
 
-@keyframes animacionAbajo {
+.diagonal1 {
+  animation: var(--animDiag1);
+}
+.diagonal2 {
+  animation: var(--animDiag2);
+}
+.diagonal3 {
+  animation: var(--animDiag3);
+}
+.diagonal4 {
+  animation: var(--animDiag4);
+}
+.diagonal5 {
+  animation: var(--animDiag5);
+}
+.diagonal6 {
+  animation: var(--animDiag6);
+}
+.diagonal7 {
+  animation: var(--animDiag7);
+}
+.diagonal8 {
+  animation: var(--animDiag8);
+}
+.diagonal9 {
+  animation: var(--animDiag9);
+}
+.diagonal10 {
+  animation: var(--animDiag10);
+}
+.diagonal11 {
+  animation: var(--animDiag11);
+}
+.diagonal12 {
+  animation: var(--animDiag12);
+}
+.diagonal13 {
+  animation: var(--animDiag13);
+}
+.diagonal14 {
+  animation: var(--animDiag14);
+}
+.diagonal15 {
+  animation: var(--animDiag15);
+}
+
+/* Animación Cascada */
+@keyframes animacionCascada {
   from {
     background-color: var(--color1_1);
   }
@@ -407,30 +249,35 @@ h3 {
     background-color: var(--color1_9);
   }
 }
+
+/* Animación diagonal */
 
 @keyframes animacionDiagonal {
-  from {
+  0% {
+    background-color: var(--color2_8);
+  }
+  12% {
     background-color: var(--color2_1);
   }
-  15% {
+  24% {
     background-color: var(--color2_2);
   }
-  30% {
+  36% {
     background-color: var(--color2_3);
   }
-  45% {
+  48% {
     background-color: var(--color2_4);
   }
   60% {
     background-color: var(--color2_5);
   }
-  75% {
+  72% {
     background-color: var(--color2_6);
   }
-  90% {
+  84% {
     background-color: var(--color2_7);
   }
-  to {
+  100% {
     background-color: var(--color2_8);
   }
 }
