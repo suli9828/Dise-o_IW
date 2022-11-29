@@ -45,10 +45,9 @@ h1 {
   font-family: 'Atma', serif;
   font-size: 3.2em;
   width: 92%;
-  height: 11vh;
+  height: 2%;
   text-align: center;
   padding-top: 0.5vh;
-  padding-bottom: 1.7em;
   margin: 2vh auto;
   margin-bottom: 36px;
 }
@@ -59,10 +58,10 @@ h1 {
   font-size: 2.5em;
   float: left;
   padding-top: 1.2vh;
+  padding-bottom: 1.2vh;
   padding-left: 1%;
-  padding-bottom: 2em;
   color: black;
-  height: 9.2vh;
+  height: 2%;
   width: 95%;
   margin: 2vh auto;
   margin-left: 0.8em;
@@ -82,23 +81,17 @@ footer {
   padding-bottom: 3vh;
 }
 
-.fondo {
-  width: 90vw;
-  margin: auto;
-  margin-top: 0;
-  overflow: hidden;
-}
-
 .bloques1 {
   background-color: #ffe8fd;
   background-image: url(./img/pattern.jpg);
   background-size: cover;
-  width: 26%;
-  height: 10%;
+  width: 24%;
+  height: 5%;
   float: left;
   margin-left: 10px;
   margin: 2vh 1vw;
   border: 3px solid #211b53;
+  border-radius: 5px;
 }
 
 .bloques1 img {
@@ -115,7 +108,9 @@ footer {
   float: left;
   margin: 1vh 1vw;
   border: 4px solid #0d1f22;
+  border-radius: 5px;
   overflow: hidden;
+  margin-bottom: 2.5em;
 }
 
 .bloques2:first-of-type {
@@ -124,58 +119,65 @@ footer {
 
 .bloques3 {
   overflow: hidden;
-
   float: left;
   width: 19vw;
   margin: 1vh 1vw;
   border: 4px solid #0d1f22;
+  border-radius: 5px;
   background-color: #0d1f22;
 }
 
-.fotos1,
-.fotos2,
-.fotos3 {
+.fotos1 {
+  width: 32%;
+  height: 32%;
+  display: block;
+}
+
+.fotos2 {
   width: 75%;
   height: 75%;
+  margin: auto;
   display: block;
 }
 
 .fotos3 {
   float: right;
-  margin-top: 1vh;
+  width: 25%;
+  height: 25%;
+  padding-top: 3em;
   margin-right: 0.5vw;
   margin-left: 1vw;
-}
-
-.fotos2 {
-  margin: auto;
+  padding-bottom: 1.1em;
 }
 
 .titBloque {
-  font-size: 2em;
+  font-size: 200%;
   color: #a3b4a2;
-  font-weight: 400;
+  font-weight: 500;
   margin-left: 0;
   text-align: center;
   font-family: 'Atma', serif;
+  padding-top: 0.5em;
   padding-bottom: 1.1em;
 }
 
 .titBloque2 {
   text-align: center;
+  font-size: 300%;
   font-family: 'Atma', serif;
-  font-size: 2.5em;
   font-weight: 600;
-  text-align: center;
+  padding-top: 0.2em;
+  padding-left: 0.2em;
+  padding-bottom: 1.8em;
   height: 12vh;
-  width: 30%;
-  padding-left: 4vw;
-  display: inline-block;
+  width: 60%;
+  float: left;
 }
 
 .desc {
   margin: 1vh 1vw;
   font-family: 'Arvo', serif;
+  padding-bottom: 1vh;
 }
 
 .nombres {
@@ -187,14 +189,15 @@ footer {
 
 .desc2 {
   padding: 0.5vh 1vw;
+  padding-bottom: 1vh;
   margin: 0;
 }
 
 .desc3 {
   color: #a3b4a2;
   padding-left: 1vw;
-  padding-top: 0.5vh;
-  padding-bottom: 0.5vh;
+  padding-top: 2vh;
+  padding-bottom: 1.5vh;
   padding-right: 1vw;
 }
 
@@ -233,4 +236,3 @@ footer a {
 #cuad3 {
   margin-left: 20vw;
 }
-
