@@ -176,6 +176,7 @@ footer {
 
 .desc {
   margin: 1vh 1vw;
+  font-size: large;
   font-family: 'Arvo', serif;
   padding-bottom: 1vh;
 }
@@ -184,17 +185,22 @@ footer {
   color: #8b0000;
   font-style: italic;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .desc2 {
-  padding: 0.5vh 1vw;
-  padding-bottom: 1vh;
+  padding-left: 0.6em;
+  font-size: large;
+  line-height: 32px;
+  padding-right: 0.6em;
+  padding-bottom: 0.8em;
   margin: 0;
 }
 
 .desc3 {
   color: #a3b4a2;
+  font-size: large;
+  line-height: 42px;
   padding-left: 1vw;
   padding-top: 2vh;
   padding-bottom: 1.5vh;
