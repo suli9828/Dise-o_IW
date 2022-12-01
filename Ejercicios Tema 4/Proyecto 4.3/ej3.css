@@ -6,22 +6,30 @@
 }
 
 body {
-  background-color: #cba7ff;
+  background-color: rgb(35, 122, 180);
   background-image: url('./img/fondo.jpg');
   background-attachment: fixed;
   background-size: contain;
 }
 
+main {
+  background-color: rgb(128, 191, 233);
+  border-radius: 30px;
+  margin: 0 3vw;
+  padding-bottom: 0.7em;
+}
+
 .bar {
   text-align: center;
   border-radius: 20px;
+  margin-bottom: 1em;
   width: auto;
   height: auto;
   background-size: 100% 100%;
   background-size: cover;
-  background-color: rgb(59, 105, 158);
+  background-color: rgb(35, 122, 180);
   border-width: 5px;
-  border: red;
+  padding-top: 1.5em;
 }
 
 header {
@@ -30,7 +38,7 @@ header {
 
 .titulo {
   text-align: center;
-  color: rgb(23, 23, 41);
+  color: whitesmoke;
 }
 
 a {
@@ -43,7 +51,7 @@ a {
 }
 
 hr {
-  color: black;
+  color: white;
 }
 
 h1 {
@@ -55,15 +63,35 @@ h1 {
 
 h2 {
   font-size: 3vw;
-  font-weight: bolder;
-  color: whitesmoke;
-  text-shadow: 0px 0px 10px black;
-  margin-left: 25px;
+  font-weight: 500;
+  padding: 15px 25px 15px 25px;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  color: rgb(35, 122, 180);
   margin-bottom: 5px;
+}
+
+.volverMenu {
+  float: right;
+  text-align: center;
+  background-color: rgb(35, 122, 180);
+  border-radius: 10px;
+  padding: 4px;
+  box-shadow: 0px 0px 5px black;
+}
+
+.menu {
+  margin-top: 1px;
+  color: whitesmoke;
+  font-weight: lighter;
+  padding-top: 1em;
+  border-radius: 50px;
+  background-color: rgb(35, 122, 180);
 }
 
 .productos {
   opacity: 100%;
+  background-color: rgb(35, 122, 180);
   border-radius: 3vw;
   padding-top: 10px;
   padding-bottom: 5px;
@@ -72,34 +100,6 @@ h2 {
 
 table {
   width: 94%;
-}
-
-.alerg {
-  width: 4.5vw;
-  height: 6.5vw;
-  padding: 0;
-  margin: 0;
-}
-
-.imagen {
-  opacity: 30%;
-  text-align: right;
-  width: 96%;
-  padding: 0;
-  margin: 0;
-}
-
-.pedido {
-  color: black;
-  font-size: 2.5vw;
-  width: 60%;
-  line-height: 50px;
-}
-
-.precio {
-  font-size: 2.5vw;
-  text-align: right;
-  font-weight: bolder;
 }
 
 footer {
@@ -111,4 +111,42 @@ footer {
 .fondo {
   margin-left: 5vw;
   padding: auto;
+}
+
+.alerg {
+  width: 4.5vw;
+  height: 6.5vw;
+  padding: 0;
+  margin: 0;
+}
+
+.alergenos {
+  text-align: center;
+  background-color: rgb(35, 122, 180);
+  border-radius: 20px;
+  width: 50vw;
+  height: auto;
+  padding: 0;
+  margin-top: 18px;
+}
+
+.imagen {
+  text-align: right;
+  width: 96%;
+  padding: 0;
+  margin: 0;
+}
+
+.carta {
+  color: white;
+  font-size: 2.5vw;
+  width: 60%;
+  line-height: 50px;
+}
+
+.precio {
+  font-size: 2.5vw;
+  color: white;
+  text-align: right;
+  font-weight: bolder;
 }
