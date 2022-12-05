@@ -32,6 +32,7 @@ main {
   border-width: 5px;
   padding-top: 1.5em;
   padding-bottom: 1.2em;
+  text-shadow: 4px 4px 4px black;
 }
 
 header {
@@ -47,7 +48,7 @@ a {
   text-decoration: none;
   font-size: 2.5vw;
   color: whitesmoke;
-  text-shadow: 0px 0px 5px black;
+  text-shadow: 4px 4px 4px black;
   margin: 0;
   padding: 0;
 }
@@ -74,21 +75,41 @@ h2 {
 }
 
 .platos {
-  width: 200px;
-  height: 150px;
+  width: 15vw;
+  height: 25vh;
   border-radius: 75px;
-  box-shadow: 0px 0px 50px white;
+  box-shadow: 0px 0px 20px white;
   margin-bottom: 20px;
   padding: 0;
 }
 
+.platos:hover {
+  transition: transform, 1s ease;
+  opacity: 100%;
+  font-size: 2vw;
+  padding: 0;
+  margin: 0;
+}
+
 .volverMenu {
   float: right;
+  text-shadow: 0px 0px 0px black;
   text-align: center;
   background-color: rgb(35, 122, 180);
   border-radius: 10px;
   padding: 4px;
   box-shadow: 0px 0px 5px black;
+}
+
+.volverMenu:hover {
+  transition: 0.5s ease-out;
+  font-size: 2.8vw;
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+  color: rgb(35, 122, 180);
+  background-color: white;
+  opacity: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .menu {
@@ -98,6 +119,7 @@ h2 {
   padding-top: 1em;
   border-radius: 50px;
   background-color: rgb(35, 122, 180);
+  text-shadow: 4px 4px 4px black;
 }
 
 .productos {
@@ -153,6 +175,15 @@ footer {
   font-size: 2.5vw;
   width: 60%;
   line-height: 120px;
+}
+
+.carta:hover,
+.precio:hover {
+  transition: transform, 1.5s ease;
+  opacity: 100%;
+  font-size: 2.8vw;
+  padding: 0;
+  margin: 0;
 }
 
 .carta1 {
