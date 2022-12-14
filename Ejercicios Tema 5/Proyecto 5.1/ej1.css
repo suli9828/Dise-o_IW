@@ -1,1 +1,152 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'KoHo', sans-serif;
+}
 
+body {
+  background-image: url('./background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+main {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 310px;
+  min-width: 1000px;
+}
+
+h1 {
+  font-family: 'Suez One', serif;
+  font-weight: 400;
+  font-size: 4.5vw;
+  margin-bottom: 1.4em;
+}
+
+p {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 1.5vh;
+  font-size: 2.2vw;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+nav {
+  background-color: #dc143c;
+  height: 70px;
+  min-width: 1000px;
+}
+
+.bloque1 {
+  background-color: #dc143c;
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  padding: 20px;
+  float: left;
+  position: relative;
+}
+
+.bloque1:hover {
+  transition: background-color 0.5s ease-in-out;
+  background-color: #2e0404;
+}
+
+.bloque2 {
+  display: none;
+  background-color: #dc143c;
+  font-size: 0.8em;
+  width: 200px;
+  height: 60px;
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 40px;
+  float: left;
+  position: relative;
+  left: -20px;
+  top: 23px;
+  z-index: 10;
+}
+
+.bloque2:hover {
+  transition: background-color 0.5s ease-in-out;
+  background-color: #2e0404;
+}
+
+.bloque1:hover .bloque2 {
+  display: block;
+}
+
+.bloque3 {
+  display: none;
+  background-color: #dc143c;
+  width: 220px;
+  height: 60px;
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 40px;
+  float: left;
+  position: relative;
+  left: -20px;
+  top: 23px;
+  z-index: 10;
+}
+
+.bloque2:hover .bloque3 {
+  display: block;
+  float: left;
+  position: relative;
+  left: 160px;
+  top: -42px;
+}
+
+.bloque3:hover {
+  transition: background-color 0.5s ease-in-out;
+  background-color: #2e0404;
+}
+
+.bloque4 {
+  display: none;
+  background-color: #dc143c;
+  background-size: cover;
+  width: 200px;
+  height: 60px;
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 40px;
+  float: left;
+  position: relative;
+  left: -20px;
+  top: 23px;
+  z-index: 10;
+}
+
+.bloque3:hover .bloque4 {
+  display: block;
+  float: left;
+  position: relative;
+  left: 160px;
+  top: -42px;
+}
+
+.bloque4:hover {
+  transition: background-color 0.5s ease-in-out;
+  background-color: #2e0404;
+}
