@@ -17,21 +17,21 @@ body {
 input {
   position: absolute;
   top: 50px;
-  left: 50px;
+  left: 1820px;
   width: 60px;
   height: 50px;
   opacity: 0%;
-  z-index: 20;
+  z-index: 10000;
   cursor: pointer;
 }
 
 .abreMenu {
   position: relative;
-  left: 50px;
+  left: 1820px;
   top: 50px;
   width: 60px;
   height: 60px;
-  z-index: 15;
+  z-index: 1000;
 }
 
 .abreMenu1,
@@ -74,7 +74,7 @@ input[type='checkbox']:checked ~ div .abreMenu3 {
 
 input[type='checkbox']:checked ~ nav {
   position: absolute;
-  left: 0%;
+  left: 66%;
   transition: all 0.5s linear;
 }
 
@@ -83,35 +83,32 @@ li {
 }
 
 nav {
-  background-image: url(./img/texture.png);
-  background: linear-gradient(
-    to bottom,
-    #321325e6 0%,
-    #5f0f40e6 50%,
-    #ce4a11e6 100%
-  );
+  background-image: url(./img/texture.png),
+    linear-gradient(to bottom, #321325e6 0%, #5f0f40e6 50%, #ce4a11e6 100%);
   padding: 30px;
-  width: 400px;
+  width: 700px;
   position: absolute;
   height: 100vh;
   top: 0;
-  right: -400px;
+  left: 100%;
   overflow: hidden;
   transition: all 0.5s linear;
+  z-index: 100;
 }
 
 .menu li {
   text-align: center;
   color: #daff7d;
   margin: 20px;
-  font-size: 1.8em;
+  font-size: 2em;
   position: relative;
   top: 70px;
 }
 .menu li img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border-radius: 200px;
+  margin-top: 0.9em;
 }
 
 a {
@@ -120,16 +117,18 @@ a {
 }
 
 a:hover {
-  transition: transform, 0.2s ease;
+  transition: transform, 0.4s ease;
   color: #f5f5f5;
   letter-spacing: 0.2vw;
+  text-decoration: underline;
 }
 
 h1 {
   font-family: 'Permanent Marker', sans-serif;
+  font-weight: 100;
   color: #f5f5f5;
   margin-right: 50px;
-  font-size: 4.5em;
+  font-size: 5.4em;
   left: 100px;
   top: 120px;
   position: absolute;
