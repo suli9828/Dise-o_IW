@@ -74,7 +74,7 @@ input[type='checkbox']:checked + div .abreMenu3 {
 
 input[type='checkbox']:checked ~ nav {
   position: absolute;
-  left: 71.5%;
+  left: 0%;
   transition: all 0.5s linear;
 }
 
@@ -85,39 +85,38 @@ li {
 nav {
   background-image: linear-gradient(
     to bottom,
-    #48b5e0e6 0%,
+    #f3c86ce6 0%,
     #93c9d6cb 50%,
-    #bb4ac5e0 100%
+    #ebd767e0 100%
   );
-  padding: 30px;
-  width: 570px;
+  width: 100%;
+  opacity: 99%;
   position: absolute;
   height: 100vh;
   top: 0;
-  left: 100%;
+  left: -100%;
   overflow: hidden;
   transition: all 0.5s linear;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .menu li {
   text-align: center;
-  color: #daff7d;
   margin: 20px;
   font-size: 2em;
   position: relative;
-  top: 70px;
+  top: 20px;
 }
 .menu li img {
-  width: 300px;
-  height: 300px;
-  border-radius: 200px;
-  margin-top: 0.9em;
+  width: 220px;
+  height: 220px;
+  margin-top: 0.2em;
+  border: 3px solid #e48100;
 }
 
 a {
   text-decoration: none;
-  color: #daff7d;
+  color: #292727;
 }
 
 a:hover {
@@ -130,26 +129,37 @@ a:hover {
 h1 {
   font-family: 'Permanent Marker', sans-serif;
   font-weight: 100;
-  color: #d154bc;
+  color: #e48100;
+  background-color: #1b1a1b;
   margin-right: 50px;
+  padding-top: 0.1em;
+  padding-left: 15.4em;
+  padding-right: 15.3em;
   font-size: 2em;
-  left: 700px;
+  left: 240px;
   top: 30px;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
+  border: 3px solid #e48100;
 }
 
 h2 {
   border-radius: 10px;
+  margin-top: 3em;
   text-align: center;
-  background-color: #f5f5f583;
-  color: #c95dda;
+  background-color: #e48100;
+  color: #000000;
   line-height: 45px;
-  font-size: 1.8em;
-  padding: 15px;
-  margin: 15px;
-  margin-right: 500px;
-  margin-left: 90px;
+  font-size: 2.1em;
+  margin-right: 300px;
+  padding-left: 12em;
+  padding-right: 12em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  left: 400px;
+  top: 80px;
+  position: absolute;
+  z-index: 10;
 }
 
 p {
@@ -160,26 +170,29 @@ p {
   color: #000000;
   line-height: 45px;
   font-size: 1.8em;
-  padding: 15px;
-  margin: 15px;
-  margin-right: 500px;
-  margin-left: 90px;
+  padding-top: 4em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  margin-top: 3em;
+  margin-right: 200px;
+  margin-left: 200px;
 }
 
 footer {
   border-radius: 10px;
   text-align: justify;
-  background-color: #d34ebd;
-  color: #000000;
+  background-color: #504a4f;
+  color: #e48100;
   font-size: 1.8em;
-  margin-left: -500px;
-  margin-right: 500px;
-  padding-right: 500px;
-  padding-left: 500px;
-  top: 820px;
-  left: 700px;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-right: 805px;
+  padding-left: 830px;
+  top: 850px;
+  left: 0px;
   position: fixed;
-  z-index: 10;
+  z-index: 100000;
 }
 
 div.part1 {
@@ -194,5 +207,5 @@ div.part1 h1 {
 }
 
 div.part1 p {
-  color: #c95dda;
+  color: #dac75d;
 }
