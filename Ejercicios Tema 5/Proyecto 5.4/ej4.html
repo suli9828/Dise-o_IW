@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <title>Proyecto 6.1</title>
-    <link rel="stylesheet" href="./ej1.css" title="style" />
-
+    <link rel="stylesheet" href="./ej4.css" title="style" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,12 +21,13 @@
   </head>
   <body>
     <main>
-      <div class="">
+      <div class="contenedor_icono_burger icono_barras">
         <span class=""></span>
         <span class=""></span>
         <span class=""></span>
       </div>
-      <div class="">
+      <div class="icono_cruz_bg"></div>
+      <div class="principal">
         <h1>The Road Not Taken</h1>
         <p>
           'The Road Not Taken' is an ambiguous poem that allows the reader to
@@ -36,7 +36,7 @@
           life when a decision has to be made. Which way will you go?
         </p>
       </div>
-      <div class="">
+      <div class="menu izquierda izquierda_off">
         <p>
           Two roads diverged in a yellow wood,<br />
           And sorry I could not travel both<br />
@@ -63,12 +63,12 @@
           And that has made all the difference.<br />
         </p>
       </div>
-      <div class="">
-        <div class="">
-          <h2>The Road Not Taken</h2>
-          <h3>By Robert Frost</h3>
+      <div class="menu derecha derecha_off">
+        <div class="title">
+          <h2 class="title-right">The Road Not Taken</h2>
+          <h3 class="subtitle-right">By Robert Frost</h3>
         </div>
-        <ul class="">
+        <ul class="enlaces-lista">
           <li>
             <a
               href="https://poemanalysis.com/robert-frost/the-road-not-taken/"
@@ -97,5 +97,11 @@
       </div>
     </main>
   </body>
-  <script></script>
+  <script>
+    $('.contenedor_icono_burger').on('click', function () {
+      $(this).toggleClass('icono_cruz icono_barras');
+      $('.derecha').toggleClass('derecha_off derecha_on');
+      $('.izquierda').toggleClass('izquierda_off izquierda_on');
+    });
+  </script>
 </html>

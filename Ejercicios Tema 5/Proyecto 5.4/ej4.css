@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 :root {
@@ -13,38 +14,123 @@
   --fondocruz: #f0f0f055;
 }
 
-/*contenedor de las barras del menú hamburguesa*/
- {
-  display: block;
-  cursor: pointer;
-}
-
 body {
   overflow-x: hidden;
 }
+
 main {
   background-image: url('./img/road.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  padding: 15vh 0;
 }
 
-/*barras menú hamburguesa*/
-span {
+h2,
+h3 {
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+.title-right {
+  font-size: 1em;
+}
+
+.subtitle-right {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.contenedor_icono_burger {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  padding: 15px;
+  right: 2em;
+  top: 1.8em;
+  z-index: 10;
+}
+
+.icono_barras span {
   display: block;
   width: 40px;
   height: 5px;
   margin-bottom: 8px;
   background: var(--herocolor);
   border-radius: 3px;
+  transition: all 0.3s;
 }
 
-/*panel central landing page*/
-.herotext {
+.icono_cruz span {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 8px;
+  background: var(--herocolor);
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.icono_cruz span:nth-child(2) {
+  display: block;
+  width: 15px;
+  height: 5px;
+  margin-bottom: 8px;
+  background: var(--herocolor);
+  border-radius: 3px;
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+.icono_cruz span:nth-child(1) {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin-bottom: 8px;
+  background-color: var(--textcolor);
+  border-radius: 3px;
+  transform: translateX(-10px) rotateZ(315deg) translateY(18px);
+}
+
+.icono_cruz span:nth-child(3) {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin-bottom: 8px;
+  background-color: var(--textcolor);
+  border-radius: 3px;
+  transform: translateX(-10px) rotateZ(-315deg) translateY(-19px);
+}
+
+.icono_cruz::before {
+  content: '';
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  right: 0.2vw;
+  bottom: 1.2vh;
+  border: 3px solid var(--textcolor);
+  background-color: #c7c2c280;
+  border-radius: 50%;
+  z-index: 9;
+  width: 50px;
+  height: 50px;
+}
+
+.principal {
   background-color: var(--fondolanding);
   border: 5px solid var(--herocolor);
   border-radius: 15px;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  padding: 5vh 7vw;
 }
 
-/*título de la landing page*/
- {
+.principal h1 {
   font-family: 'Lexend Mega', sans-serif;
   font-weight: normal;
   font-size: 4.5vw;
@@ -54,51 +140,99 @@ span {
   color: var(--herocolor);
 }
 
-/*texto del párrafo de la landing page*/
- {
+.principal p {
   font-family: 'Habibi', serif;
-  font-size: 1.7rem;
+  font-size: 1.8em;
   color: var(--herocolor);
+  text-align: center;
+  margin: 7vh 5vw;
 }
 
-/*panel izquierdo*/
- {
+.menu {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+}
+
+.izquierda {
   width: 40%;
   height: 100%;
   background-color: var(--fondopoema);
+  transition: all 0.8s;
 }
 
-/*texto del lateral izquierdo*/
- {
+.izquierda_off {
+  left: -100%;
+}
+
+.izquierda_on {
+  left: 0;
+}
+
+.izquierda p {
   font-family: 'Habibi', serif;
   font-weight: normal;
-  font-size: 1.3rem;
+  font-size: 1.3em;
   text-align: center;
   color: var(--textcolor);
+  margin-top: 7vh;
 }
 
-/*panel derecho*/
- {
+.derecha {
   width: 60%;
   height: 100%;
   background-image: url('./img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.8s;
 }
 
-/*formato texto  panel derecho*/
- {
+.derecha_off {
+  right: -100%;
+}
+
+.derecha_on {
+  right: 0;
+}
+
+.derecha .title {
   text-decoration: none;
   font-family: 'Lexend Mega', sans-serif;
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: 200;
   text-align: center;
-  line-height: 5rem;
+  line-height: 2em;
   color: var(--textcolor);
+  margin-top: 10vh;
 }
 
-h2,
-h3 {
-  font-weight: 700;
+.derecha ul {
+  list-style: none;
+  text-align: center;
+  line-height: 5em;
+  margin: 10vh auto;
+  width: 60%;
 }
-h3 {
-  font-size: 2rem;
+
+.derecha ul li {
+  font-size: 3em;
+  font-family: 'Lexend Mega';
+  font-weight: 100;
+  margin: 1vh auto;
+}
+
+.derecha ul li a {
+  color: var(--textcolor);
+  text-decoration: none;
+  padding: 0.5vh 1vw;
+  transition: all 0.3s;
+}
+
+.derecha ul li a:hover {
+  border-bottom: 4px solid var(--textcolor);
+  border-top: 4px solid var(--textcolor);
+  border-left: 4px solid var(--textcolor);
+  border-right: 4px solid var(--textcolor);
+  background-color: var(--fondopoema);
+  border-radius: 5px;
 }
