@@ -110,8 +110,8 @@ h3 {
   display: block;
   cursor: pointer;
   position: absolute;
-  right: 0.2vw;
-  bottom: 1.2vh;
+  right: 0.09vw;
+  bottom: 1.1vh;
   border: 3px solid var(--textcolor);
   background-color: #c7c2c280;
   border-radius: 50%;
@@ -142,7 +142,7 @@ h3 {
 
 .principal p {
   font-family: 'Habibi', serif;
-  font-size: 1.8em;
+  font-size: 2.2em;
   color: var(--herocolor);
   text-align: center;
   margin: 7vh 5vw;
@@ -225,7 +225,7 @@ h3 {
   color: var(--textcolor);
   text-decoration: none;
   padding: 0.5vh 1vw;
-  transition: all 0.3s;
+  transition: all 0.1s;
 }
 
 .derecha ul li a:hover {
