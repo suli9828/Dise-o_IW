@@ -46,6 +46,7 @@ hr {
   border: 4px solid darkslategrey;
   border-radius: 10px;
   background-color: grey;
+  margin-left: 25vw;
 }
 
 .contenedorDados {
@@ -89,7 +90,7 @@ hr {
 .dado6 {
   display: flex;
   flex-flow: wrap;
-  margin: 2px;
+  margin: 6px;
   border-radius: 10px;
   border: 3px solid whitesmoke;
   width: 100px;
@@ -161,7 +162,7 @@ p {
   justify-content: space-between;
 }
 
-.dado4punto1y2 {
+.dado4_1-2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
