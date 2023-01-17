@@ -126,13 +126,13 @@ p {
 
 .dado2-1 {
   display: flex;
-  flex-flow: row;
+  flex-flow: row-reverse;
+  align-self: flex-end;
 }
 
 .dado2-2 {
   display: flex;
-  flex-flow: row-reverse;
-  align-self: flex-end;
+  flex-flow: row;
 }
 
 .dado3 {
@@ -143,6 +143,7 @@ p {
 .dado3-1 {
   display: flex;
   justify-content: space-between;
+  align-self: flex-end;
 }
 
 .dado3-2 {
@@ -154,7 +155,6 @@ p {
 .dado3-3 {
   display: flex;
   flex-flow: column;
-  align-self: flex-end;
 }
 
 .dado4 {
