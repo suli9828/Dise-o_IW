@@ -172,7 +172,7 @@ h3 {
 .izquierda p {
   font-family: 'Habibi', serif;
   font-weight: normal;
-  font-size: 1.3em;
+  font-size: 1.7em;
   text-align: center;
   color: var(--textcolor);
   margin-top: 7vh;
@@ -198,7 +198,7 @@ h3 {
 .derecha .title {
   text-decoration: none;
   font-family: 'Lexend Mega', sans-serif;
-  font-size: 3em;
+  font-size: 4.2em;
   font-weight: 200;
   text-align: center;
   line-height: 2em;
@@ -209,13 +209,13 @@ h3 {
 .derecha ul {
   list-style: none;
   text-align: center;
-  line-height: 5em;
+  line-height: 6em;
   margin: 10vh auto;
   width: 60%;
 }
 
 .derecha ul li {
-  font-size: 3em;
+  font-size: 3.5em;
   font-family: 'Lexend Mega';
   font-weight: 100;
   margin: 1vh auto;
