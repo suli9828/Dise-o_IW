@@ -30,8 +30,8 @@ hr {
   flex-direction: wrap;
   justify-content: center;
   color: gainsboro;
-  border: 2.3px solid gainsboro;
-  width: 50vw;
+  border: 2px solid gainsboro;
+  width: 40vw;
   font-weight: bold;
 }
 
@@ -42,8 +42,8 @@ hr {
   align-items: center;
   padding: 5px;
   margin-top: 1em;
-  margin-right: 19em;
-  margin-left: 19em;
+  margin-right: 34em;
+  margin-left: 34em;
   border: 5px solid gainsboro;
   border-radius: 10px;
   background-color: darkslategray;
