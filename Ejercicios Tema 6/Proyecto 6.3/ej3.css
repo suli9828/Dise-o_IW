@@ -1,1 +1,636 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
 
+header {
+  background-color: #9d81d4;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Título principal*/
+.titulo {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  font-size: 1em;
+  padding-right: 8vw;
+}
+
+/*Contenedor redesSociales de arriba*/
+.redesSociales {
+  color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+i {
+  transition: all 1s linear;
+  color: blanchedalmond;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/*Navegador de personajes*/
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.menuPersonajes {
+  transition: all 0.5s linear;
+  color: rgb(68, 66, 153);
+  font-size: 1.4em;
+  font-family: 'Lexend Mega', cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  width: 16.2vw;
+  margin: 3px;
+  padding: 5px;
+}
+
+body {
+  background-color: rgba(189, 186, 206, 0.5);
+  fill: rgb(199, 192, 233);
+  background-size: 500px;
+}
+
+main {
+  display: flex;
+  flex-flow: row;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-family: 'Lexend Mega', cursive;
+  display: flex;
+  flex-flow: row;
+  align-self: center;
+  color: blanchedalmond;
+}
+
+h2 {
+  font-family: 'Lexend Mega', cursive;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-family: 'Lexend Mega', cursive;
+  margin: 10px;
+  color: blanchedalmond;
+  text-shadow: 0px 0px 5px black;
+}
+
+h4 {
+  font-family: 'Lexend Mega', cursive;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 15px;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+}
+
+/*Imagen del título*/
+.imagenLogo {
+  display: flex;
+  width: 10%;
+}
+
+/*Imágenes de los personajes*/
+.imagenBloque2 {
+  transition: all 0.5s linear;
+  filter: grayscale(100%);
+  padding: 10px;
+  display: flex;
+  float: left;
+  width: 25%;
+}
+
+strong {
+  color: blanchedalmond;
+  text-shadow: 0px 0px 2px black;
+}
+
+img {
+  transition: all 0.5s linear;
+  font-size: 10vw;
+  width: 100%;
+}
+
+hr {
+  transition: all 1s linear;
+  color: rgb(68, 66, 153);
+  opacity: 0%;
+  width: 0%;
+  display: flex;
+  align-self: center;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 3px solid rgb(68, 66, 153);
+}
+
+p {
+  font-size: 1.2em;
+  font-family: 'Habibi', sans-serif;
+  text-align: justify;
+  line-height: 30px;
+  padding: 10px;
+}
+
+/*Primer bloque, izquierda y derecha*/
+.bloque1 {
+  transition: all 1s linear;
+  width: 30vw;
+  display: flex;
+  flex-flow: column;
+}
+
+.bloque1 div {
+  transition: all 1s linear;
+}
+
+.bloque1 div:nth-child(odd) {
+  display: flex;
+  flex-flow: column;
+  align-self: flex-end;
+}
+
+.species {
+  margin: 5px;
+  width: 20vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: plum;
+  flex-flow: column;
+}
+
+.species h2 {
+  transition: all 0.5s linear;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(121, 66, 153);
+  text-align: center;
+}
+
+.location {
+  margin: 5px;
+  width: 20vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: plum;
+  flex-flow: column;
+}
+
+.location h2 {
+  transition: all 0.5s linear;
+  color: rgb(121, 66, 153);
+  background-color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.equator {
+  margin: 5px;
+  width: 20vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: plum;
+  display: flex;
+  flex-flow: column;
+}
+
+.equator h2 {
+  transition: all 0.5s linear;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(121, 66, 153);
+  text-align: center;
+}
+
+.wings {
+  margin: 5px;
+  width: 20vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: plum;
+  flex-flow: column;
+}
+
+.wings h2 {
+  transition: all 0.5s linear;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(121, 66, 153);
+  background-color: white;
+  text-align: center;
+}
+
+.jumping {
+  margin: 5px;
+  width: 20vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: plum;
+  display: flex;
+  flex-flow: column;
+}
+
+.jumping h2 {
+  transition: all 0.5s linear;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(121, 66, 153);
+  text-align: center;
+}
+
+.colors {
+  margin: 5px;
+  width: 20vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: plum;
+  display: flex;
+  flex-flow: column;
+}
+
+.colors h2 {
+  transition: all 0.5s linear;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(121, 66, 153);
+  background-color: white;
+  text-align: center;
+}
+
+.diet {
+  margin: 5px;
+  width: 20vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: plum;
+  display: flex;
+  flex-flow: column;
+}
+
+.diet h2 {
+  transition: all 0.5s linear;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(121, 66, 153);
+  text-align: center;
+}
+
+.eyesight {
+  margin: 5px;
+  width: 20vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: plum;
+  display: flex;
+  flex-flow: column;
+}
+
+.eyesight h2 {
+  transition: all 0.5s linear;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(121, 66, 153);
+  background-color: white;
+  text-align: center;
+}
+
+.size {
+  margin: 5px;
+  width: 20vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: plum;
+  display: flex;
+  flex-flow: column;
+}
+
+.size h2 {
+  transition: all 0.5s linear;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(121, 66, 153);
+  text-align: center;
+}
+
+.bloque2 {
+  width: 41vw;
+  display: flex;
+  flex-flow: column;
+}
+
+.bloque2 div {
+  transition: all 0.5s linear;
+}
+
+.kenny {
+  margin: 10px;
+  border: 2px solid rgb(68, 66, 153);
+}
+
+.john {
+  margin: 10px;
+  border: 2px solid rgb(68, 66, 153);
+}
+
+.yoda {
+  margin: 10px;
+  border: 2px solid rgb(68, 66, 153);
+}
+
+.bart {
+  margin: 10px;
+  border: 2px solid rgb(68, 66, 153);
+}
+
+.patrick {
+  margin: 10px;
+  border: 2px solid rgb(68, 66, 153);
+}
+
+.mario {
+  margin: 10px;
+  border: 2px solid rgb(68, 66, 153);
+}
+
+/*Tercer bloque*/
+.titColumna3 {
+  width: 100%;
+}
+
+.bloque3 {
+  width: 30vw;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.bloque3 div {
+  transition: all 0.5s linear;
+}
+
+/*Propiedades para hacer que la imagen baje*/
+.pequeño {
+  min-width: 170px;
+  display: flex;
+  flex: 1 0 35%;
+}
+
+.antartida {
+  margin: 10px;
+  width: 100vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: #9d81d452;
+  display: flex;
+  flex-flow: column;
+}
+
+.galapago {
+  margin: 10px;
+  width: 100vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: #9d81d452;
+  display: flex;
+  flex-flow: column;
+}
+
+.africa {
+  margin: 10px;
+  width: 15vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: #9d81d452;
+  display: flex;
+  flex-flow: column;
+}
+
+.chile {
+  margin: 10px;
+  width: 15vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: #9d81d452;
+  display: flex;
+  flex-flow: column;
+}
+
+.namibia {
+  margin: 10px;
+  width: 15vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: #9d81d452;
+  display: flex;
+  flex-flow: column;
+}
+
+.zelanda {
+  margin: 10px;
+  width: 15vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: #9d81d452;
+  display: flex;
+  flex-flow: column;
+}
+
+.readMore {
+  color: blanchedalmond;
+  transition: all 1s linear;
+  font-family: 'Lexend Mega', cursive;
+  padding: 5px;
+  font-size: 1.3em;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 10px;
+  border: 2px solid black;
+  background-color: rgb(68, 66, 153);
+}
+
+/*Fin del bloque 3*/
+
+/*Pié de página*/
+footer {
+  background-color: #9d81d4;
+  height: 50px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.pie {
+  font-family: 'Lexend Mega', cursive;
+  font-size: 1.2em;
+  color: rgb(238, 216, 183);
+  display: flex;
+  flex-flow: row nowrap;
+  align-self: center;
+}
+
+.bloque1 div:hover {
+  transition: all 0.5s linear;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px black;
+}
+
+.bloque1 h2:hover {
+  transition: all 0.5s linear;
+  letter-spacing: 3px;
+}
+
+.bloque2 .kenny:hover {
+  transition: all 0.5s linear;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px black;
+  background-color: #b9a3e6;
+}
+
+.bloque2 .john:hover {
+  transition: all 0.5s linear;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px black;
+}
+
+.bloque2 .yoda:hover {
+  transition: all 0.5s linear;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px black;
+}
+
+.bloque2 .bart:hover {
+  transition: all 0.5s linear;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px black;
+}
+
+.bloque2 .patrick:hover {
+  transition: all 0.5s linear;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px black;
+}
+
+.bloque2 .mario:hover {
+  transition: all 0.5s linear;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px black;
+}
+
+.bloque2 div:hover .imagenBloque2 {
+  transition: all 0.5s linear;
+  filter: grayscale(0%);
+}
+
+.bloque3 *:hover hr {
+  transition: all 1s linear;
+  color: rgb(68, 66, 153);
+  opacity: 100%;
+  width: 80%;
+}
+
+.bloque3 div:hover {
+  transition: all 0.5s linear;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px black;
+}
+
+.bloque3 div:hover img {
+  transition: all 0.5s linear;
+  border-radius: 15px;
+}
+
+.readMore:hover {
+  transition: all 0.5s linear;
+  border-radius: 15px;
+}
+
+.navKenny:hover {
+  transition: all 0.5s linear;
+  letter-spacing: 2px;
+  box-shadow: 0px 4px 4px black;
+  color: orange;
+  text-shadow: 0px 1px 1px black;
+}
+
+.navSimpson:hover {
+  transition: all 0.5s linear;
+  letter-spacing: 2px;
+  box-shadow: 0px 4px 4px black;
+  color: yellow;
+  text-shadow: 0px 1px 1px black;
+}
+
+.navPatrick:hover {
+  transition: all 0.5s linear;
+  letter-spacing: 2px;
+  box-shadow: 0px 4px 4px black;
+  color: rgb(68, 66, 153);
+  text-shadow: 0px 1px 1px black;
+}
+
+.navYoda:hover {
+  transition: all 0.5s linear;
+  letter-spacing: 2px;
+  box-shadow: 0px 4px 4px black;
+  color: green;
+  text-shadow: 0px 1px 1px black;
+}
+
+.navRambo:hover {
+  transition: all 0.5s linear;
+  letter-spacing: 2px;
+  box-shadow: 0px 4px 4px black;
+  color: black;
+  text-shadow: 0px 1px 1px black;
+}
+
+.navMario:hover {
+  transition: all 0.5s linear;
+  letter-spacing: 2px;
+  box-shadow: 0px 4px 4px black;
+  color: red;
+  text-shadow: 0px 1px 1px black;
+}
+
+.social:hover .fa-instagram-square {
+  transition: all 1s linear;
+  color: rgb(219, 23, 115);
+  letter-spacing: 3px;
+}
+
+.social:hover .fa-twitter-square {
+  transition: all 1s linear;
+  color: rgb(36, 153, 231);
+  letter-spacing: 3px;
+}
+
+.social:hover .fa-youtube-square {
+  transition: all 1s linear;
+  color: red;
+  letter-spacing: 3px;
+}
+
+.social:hover .fa-tiktok {
+  transition: all 1s linear;
+  color: white;
+  letter-spacing: 3px;
+}
