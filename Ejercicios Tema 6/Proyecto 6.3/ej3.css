@@ -20,7 +20,8 @@ header {
 }
 
 .redesSociales {
-  color: blanchedalmond;
+  color: #9d81d4;
+  background-color: blanchedalmond;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,9 +34,8 @@ a {
 
 i {
   transition: all 1s linear;
-  color: blanchedalmond;
+  color: #9d81d4;
   font-size: 2em;
-  margin-bottom: 10px;
 }
 
 .menu {
@@ -44,7 +44,7 @@ i {
   align-self: center;
 }
 
-.menuPersonajes {
+.menuContributors {
   transition: all 0.5s linear;
   color: rgb(68, 66, 153);
   font-size: 1.4em;
@@ -53,7 +53,7 @@ i {
   flex-direction: row;
   justify-content: center;
   background-color: white;
-  width: 16.2vw;
+  width: 16.15vw;
   margin: 3px;
   padding: 5px;
 }
@@ -94,8 +94,8 @@ h4 {
   font-size: 1.4em;
   text-align: center;
   margin: 15px;
-  color: white;
-  text-shadow: 0px 0px 5px black;
+  color: #9d81d4;
+  text-shadow: 0px 0px 1px #9d81d4;
 }
 
 .imagenLogo {
@@ -125,7 +125,7 @@ img {
 
 hr {
   transition: all 1s linear;
-  color: blanchedalmond;
+  color: #9d81d4;
   opacity: 0%;
   width: 0%;
   display: flex;
@@ -133,7 +133,7 @@ hr {
   margin-top: -10px;
   margin-bottom: 10px;
   border-radius: 10px;
-  border: 3px solid blanchedalmond;
+  border: 3px solid #9d81d4;
 }
 
 p {
@@ -335,35 +335,20 @@ p {
   flex-flow: column;
 }
 
-.bloque2 div {
-  transition: all 0.5s linear;
+.bloque3 p {
+  text-shadow: 0px 0px 1px white;
+  color: black;
 }
 
-.kenny {
-  margin: 10px;
-  border: 2px solid rgb(68, 66, 153);
+.bloque3 img {
+  border-bottom: 2px solid rgb(68, 66, 153);
 }
 
-.john {
-  margin: 10px;
-  border: 2px solid rgb(68, 66, 153);
-}
-
-.yoda {
-  margin: 10px;
-  border: 2px solid rgb(68, 66, 153);
-}
-
-.bart {
-  margin: 10px;
-  border: 2px solid rgb(68, 66, 153);
-}
-
-.patrick {
-  margin: 10px;
-  border: 2px solid rgb(68, 66, 153);
-}
-
+.kenny,
+.john,
+.yoda,
+.bart,
+.patrick,
 .mario {
   margin: 10px;
   border: 2px solid rgb(68, 66, 153);
@@ -380,10 +365,6 @@ p {
   flex-wrap: wrap;
 }
 
-.bloque3 div {
-  transition: all 0.5s linear;
-}
-
 .pequeño {
   min-width: 170px;
   display: flex;
@@ -394,7 +375,7 @@ p {
   margin: 10px;
   width: 100vw;
   border: 2px solid rgb(68, 66, 153);
-  background-color: #9d81d452;
+  background-color: blanchedalmond;
   display: flex;
   flex-flow: column;
 }
@@ -403,7 +384,7 @@ p {
   margin: 10px;
   width: 100vw;
   border: 2px solid rgb(68, 66, 153);
-  background-color: #9d81d452;
+  background-color: blanchedalmond;
   display: flex;
   flex-flow: column;
 }
@@ -412,7 +393,7 @@ p {
   margin: 10px;
   width: 15vw;
   border: 2px solid rgb(68, 66, 153);
-  background-color: #9d81d452;
+  background-color: blanchedalmond;
   display: flex;
   flex-flow: column;
 }
@@ -421,7 +402,7 @@ p {
   margin: 10px;
   width: 15vw;
   border: 2px solid rgb(68, 66, 153);
-  background-color: #9d81d452;
+  background-color: blanchedalmond;
   display: flex;
   flex-flow: column;
 }
@@ -430,7 +411,7 @@ p {
   margin: 10px;
   width: 15vw;
   border: 2px solid rgb(68, 66, 153);
-  background-color: #9d81d452;
+  background-color: blanchedalmond;
   display: flex;
   flex-flow: column;
 }
@@ -439,7 +420,7 @@ p {
   margin: 10px;
   width: 15vw;
   border: 2px solid rgb(68, 66, 153);
-  background-color: #9d81d452;
+  background-color: blanchedalmond;
   display: flex;
   flex-flow: column;
 }
@@ -455,7 +436,7 @@ p {
   align-items: center;
   margin: 10px;
   border: 2px solid black;
-  background-color: rgb(68, 66, 153);
+  background-color: #9d81d4;
 }
 
 footer {
@@ -546,65 +527,59 @@ footer {
   box-shadow: 0px 5px 5px black;
 }
 
-.navKenny:hover {
+.menuKenny:hover {
   transition: all 0.5s linear;
-  box-shadow: 0px 4px 4px black;
   color: orange;
   text-shadow: 0px 1px 1px black;
 }
 
-.navSimpson:hover {
+.menuRambo:hover {
   transition: all 0.5s linear;
-  box-shadow: 0px 4px 4px black;
-  color: yellow;
-  text-shadow: 0px 1px 1px black;
-}
-
-.navPatrick:hover {
-  transition: all 0.5s linear;
-  box-shadow: 0px 4px 4px black;
-  color: pink;
-  text-shadow: 0px 1px 1px black;
-}
-
-.navYoda:hover {
-  transition: all 0.5s linear;
-  letter-spacing: 2px;
-  box-shadow: 0px 4px 4px black;
-  color: green;
-  text-shadow: 0px 1px 1px black;
-}
-
-.navRambo:hover {
-  transition: all 0.5s linear;
-  box-shadow: 0px 4px 4px black;
   color: black;
   text-shadow: 0px 1px 1px black;
 }
 
-.navMario:hover {
+.menuSimpson:hover {
   transition: all 0.5s linear;
-  box-shadow: 0px 4px 4px black;
+  color: yellow;
+  text-shadow: 0px 1px 1px black;
+}
+
+.menuPatrick:hover {
+  transition: all 0.5s linear;
+  color: pink;
+  text-shadow: 0px 1px 1px black;
+}
+
+.menuYoda:hover {
+  transition: all 0.5s linear;
+  color: green;
+  text-shadow: 0px 1px 1px black;
+}
+
+.menuMario:hover {
+  transition: all 0.5s linear;
   color: red;
   text-shadow: 0px 1px 1px black;
 }
 
 .social:hover .fa-instagram-square {
-  transition: all 1s linear;
+  transition: all 0.5s linear;
   color: rgb(219, 23, 115);
 }
 
 .social:hover .fa-twitter-square {
-  transition: all 1s linear;
+  transition: all 0.5s linear;
   color: rgb(36, 153, 231);
 }
 
 .social:hover .fa-youtube-square {
-  transition: all 1s linear;
+  transition: all 0.5s linear;
   color: red;
 }
 
 .social:hover .fa-tiktok {
-  transition: all 1s linear;
-  color: white;
+  transition: all 0.5s linear;
+  color: black;
+  text-shadow: 1px 1px 1px rgb(214, 18, 198);
 }
