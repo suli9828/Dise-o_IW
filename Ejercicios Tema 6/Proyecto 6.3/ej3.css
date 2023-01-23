@@ -11,7 +11,6 @@ header {
   flex-direction: column;
 }
 
-/*Título principal*/
 .titulo {
   display: flex;
   flex-flow: row;
@@ -20,7 +19,6 @@ header {
   padding-right: 8vw;
 }
 
-/*Contenedor redesSociales de arriba*/
 .redesSociales {
   color: blanchedalmond;
   display: flex;
@@ -40,7 +38,6 @@ i {
   margin-bottom: 10px;
 }
 
-/*Navegador de personajes*/
 .menu {
   display: flex;
   flex-direction: row;
@@ -62,9 +59,7 @@ i {
 }
 
 body {
-  background-color: rgba(189, 186, 206, 0.5);
-  fill: rgb(199, 192, 233);
-  background-size: 500px;
+  background-color: rgba(203, 196, 236, 0.5);
 }
 
 main {
@@ -86,11 +81,12 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-family: 'Lexend Mega', cursive;
   margin: 10px;
   color: blanchedalmond;
-  text-shadow: 0px 0px 5px black;
+  text-decoration: underline #9d81d4 3px;
+  text-shadow: 0px 0px 4px black;
 }
 
 h4 {
@@ -102,13 +98,11 @@ h4 {
   text-shadow: 0px 0px 5px black;
 }
 
-/*Imagen del título*/
 .imagenLogo {
   display: flex;
   width: 10%;
 }
 
-/*Imágenes de los personajes*/
 .imagenBloque2 {
   transition: all 0.5s linear;
   filter: grayscale(100%);
@@ -120,7 +114,7 @@ h4 {
 
 strong {
   color: blanchedalmond;
-  text-shadow: 0px 0px 2px black;
+  text-shadow: 0px 0px 4px black;
 }
 
 img {
@@ -131,7 +125,7 @@ img {
 
 hr {
   transition: all 1s linear;
-  color: rgb(68, 66, 153);
+  color: blanchedalmond;
   opacity: 0%;
   width: 0%;
   display: flex;
@@ -139,7 +133,7 @@ hr {
   margin-top: -10px;
   margin-bottom: 10px;
   border-radius: 10px;
-  border: 3px solid rgb(68, 66, 153);
+  border: 3px solid blanchedalmond;
 }
 
 p {
@@ -150,7 +144,6 @@ p {
   padding: 10px;
 }
 
-/*Primer bloque, izquierda y derecha*/
 .bloque1 {
   transition: all 1s linear;
   width: 30vw;
@@ -172,7 +165,7 @@ p {
   margin: 5px;
   width: 20vw;
   border: 2px solid rgb(68, 66, 153);
-  background-color: plum;
+  background-color: blanchedalmond;
   flex-flow: column;
 }
 
@@ -182,7 +175,7 @@ p {
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgb(121, 66, 153);
+  background-color: #9d81d4;
   text-align: center;
 }
 
@@ -190,14 +183,14 @@ p {
   margin: 5px;
   width: 20vw;
   border: 2px solid rgb(68, 66, 153);
-  background-color: plum;
+  background-color: blanchedalmond;
   flex-flow: column;
 }
 
 .location h2 {
   transition: all 0.5s linear;
-  color: rgb(121, 66, 153);
-  background-color: white;
+  color: white;
+  background-color: #9d81d4;
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
@@ -208,7 +201,7 @@ p {
   margin: 5px;
   width: 20vw;
   border: 2px solid rgb(68, 66, 153);
-  background-color: plum;
+  background-color: blanchedalmond;
   display: flex;
   flex-flow: column;
 }
@@ -219,7 +212,7 @@ p {
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgb(121, 66, 153);
+  background-color: #9d81d4;
   text-align: center;
 }
 
@@ -227,7 +220,7 @@ p {
   margin: 5px;
   width: 20vw;
   border: 2px solid rgb(68, 66, 153);
-  background-color: plum;
+  background-color: blanchedalmond;
   flex-flow: column;
 }
 
@@ -236,8 +229,8 @@ p {
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
-  color: rgb(121, 66, 153);
-  background-color: white;
+  color: white;
+  background-color: #9d81d4;
   text-align: center;
 }
 
@@ -245,7 +238,7 @@ p {
   margin: 5px;
   width: 20vw;
   border: 2px solid rgb(68, 66, 153);
-  background-color: plum;
+  background-color: blanchedalmond;
   display: flex;
   flex-flow: column;
 }
@@ -256,7 +249,7 @@ p {
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgb(121, 66, 153);
+  background-color: #9d81d4;
   text-align: center;
 }
 
@@ -264,7 +257,7 @@ p {
   margin: 5px;
   width: 20vw;
   border: 2px solid rgb(68, 66, 153);
-  background-color: plum;
+  background-color: blanchedalmond;
   display: flex;
   flex-flow: column;
 }
@@ -274,8 +267,8 @@ p {
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
-  color: rgb(121, 66, 153);
-  background-color: white;
+  color: white;
+  background-color: #9d81d4;
   text-align: center;
 }
 
@@ -283,7 +276,7 @@ p {
   margin: 5px;
   width: 20vw;
   border: 2px solid rgb(68, 66, 153);
-  background-color: plum;
+  background-color: blanchedalmond;
   display: flex;
   flex-flow: column;
 }
@@ -294,7 +287,7 @@ p {
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgb(121, 66, 153);
+  background-color: #9d81d4;
   text-align: center;
 }
 
@@ -302,7 +295,7 @@ p {
   margin: 5px;
   width: 20vw;
   border: 2px solid rgb(68, 66, 153);
-  background-color: plum;
+  background-color: blanchedalmond;
   display: flex;
   flex-flow: column;
 }
@@ -312,8 +305,8 @@ p {
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
-  color: rgb(121, 66, 153);
-  background-color: white;
+  color: white;
+  background-color: #9d81d4;
   text-align: center;
 }
 
@@ -321,7 +314,7 @@ p {
   margin: 5px;
   width: 20vw;
   border: 2px solid rgb(68, 66, 153);
-  background-color: plum;
+  background-color: blanchedalmond;
   display: flex;
   flex-flow: column;
 }
@@ -332,7 +325,7 @@ p {
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgb(121, 66, 153);
+  background-color: #9d81d4;
   text-align: center;
 }
 
@@ -376,7 +369,6 @@ p {
   border: 2px solid rgb(68, 66, 153);
 }
 
-/*Tercer bloque*/
 .titColumna3 {
   width: 100%;
 }
@@ -392,7 +384,6 @@ p {
   transition: all 0.5s linear;
 }
 
-/*Propiedades para hacer que la imagen baje*/
 .pequeño {
   min-width: 170px;
   display: flex;
@@ -467,9 +458,6 @@ p {
   background-color: rgb(68, 66, 153);
 }
 
-/*Fin del bloque 3*/
-
-/*Pié de página*/
 footer {
   background-color: #9d81d4;
   height: 50px;
@@ -502,47 +490,52 @@ footer {
   transition: all 0.5s linear;
   border-radius: 15px;
   box-shadow: 0px 5px 5px black;
-  background-color: #b9a3e6;
+  background-color: #d6c4fc;
 }
 
 .bloque2 .john:hover {
   transition: all 0.5s linear;
   border-radius: 15px;
   box-shadow: 0px 5px 5px black;
+  background-color: #d6c4fc;
 }
 
 .bloque2 .yoda:hover {
   transition: all 0.5s linear;
   border-radius: 15px;
   box-shadow: 0px 5px 5px black;
+  background-color: #d6c4fc;
 }
 
 .bloque2 .bart:hover {
   transition: all 0.5s linear;
   border-radius: 15px;
   box-shadow: 0px 5px 5px black;
+  background-color: #d6c4fc;
 }
 
 .bloque2 .patrick:hover {
   transition: all 0.5s linear;
   border-radius: 15px;
   box-shadow: 0px 5px 5px black;
+  background-color: #d6c4fc;
 }
 
 .bloque2 .mario:hover {
   transition: all 0.5s linear;
   border-radius: 15px;
   box-shadow: 0px 5px 5px black;
+  background-color: #d6c4fc;
 }
 
 .bloque2 div:hover .imagenBloque2 {
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
   filter: grayscale(0%);
 }
 
 .bloque3 *:hover hr {
   transition: all 1s linear;
-  color: rgb(68, 66, 153);
+  color: blanchedalmond;
   opacity: 100%;
   width: 80%;
 }
@@ -553,19 +546,8 @@ footer {
   box-shadow: 0px 5px 5px black;
 }
 
-.bloque3 div:hover img {
-  transition: all 0.5s linear;
-  border-radius: 15px;
-}
-
-.readMore:hover {
-  transition: all 0.5s linear;
-  border-radius: 15px;
-}
-
 .navKenny:hover {
   transition: all 0.5s linear;
-  letter-spacing: 2px;
   box-shadow: 0px 4px 4px black;
   color: orange;
   text-shadow: 0px 1px 1px black;
@@ -573,7 +555,6 @@ footer {
 
 .navSimpson:hover {
   transition: all 0.5s linear;
-  letter-spacing: 2px;
   box-shadow: 0px 4px 4px black;
   color: yellow;
   text-shadow: 0px 1px 1px black;
@@ -581,9 +562,8 @@ footer {
 
 .navPatrick:hover {
   transition: all 0.5s linear;
-  letter-spacing: 2px;
   box-shadow: 0px 4px 4px black;
-  color: rgb(68, 66, 153);
+  color: pink;
   text-shadow: 0px 1px 1px black;
 }
 
@@ -597,7 +577,6 @@ footer {
 
 .navRambo:hover {
   transition: all 0.5s linear;
-  letter-spacing: 2px;
   box-shadow: 0px 4px 4px black;
   color: black;
   text-shadow: 0px 1px 1px black;
@@ -605,7 +584,6 @@ footer {
 
 .navMario:hover {
   transition: all 0.5s linear;
-  letter-spacing: 2px;
   box-shadow: 0px 4px 4px black;
   color: red;
   text-shadow: 0px 1px 1px black;
@@ -614,23 +592,19 @@ footer {
 .social:hover .fa-instagram-square {
   transition: all 1s linear;
   color: rgb(219, 23, 115);
-  letter-spacing: 3px;
 }
 
 .social:hover .fa-twitter-square {
   transition: all 1s linear;
   color: rgb(36, 153, 231);
-  letter-spacing: 3px;
 }
 
 .social:hover .fa-youtube-square {
   transition: all 1s linear;
   color: red;
-  letter-spacing: 3px;
 }
 
 .social:hover .fa-tiktok {
   transition: all 1s linear;
   color: white;
-  letter-spacing: 3px;
 }
