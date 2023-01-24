@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -16,15 +17,19 @@ header {
   flex-flow: row;
   justify-content: space-between;
   font-size: 1em;
-  padding-right: 8vw;
+  padding-right: 16vw;
+  padding-top: 4em;
 }
 
 .redesSociales {
   color: #9d81d4;
   background-color: blanchedalmond;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
+  z-index: 100;
 }
 
 a {
@@ -563,22 +568,22 @@ footer {
   text-shadow: 0px 1px 1px black;
 }
 
-.social:hover .fa-instagram-square {
+.socialInstagram:hover .fa-instagram-square {
   transition: all 0.5s linear;
   color: rgb(219, 23, 115);
 }
 
-.social:hover .fa-twitter-square {
+.socialTwitter:hover .fa-twitter-square {
   transition: all 0.5s linear;
   color: rgb(36, 153, 231);
 }
 
-.social:hover .fa-youtube-square {
+.socialYoutube:hover .fa-youtube-square {
   transition: all 0.5s linear;
   color: red;
 }
 
-.social:hover .fa-tiktok {
+.socialTiktok:hover .fa-tiktok {
   transition: all 0.5s linear;
   color: black;
   text-shadow: 1px 1px 1px rgb(214, 18, 198);
