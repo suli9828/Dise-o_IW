@@ -1,1 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
 
+body {
+  background-color: lightskyblue;
+  font-family: 'Barlow', 'sans-serif';
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  padding: 30px;
+  color: rebeccapurple;
+}
+.container {
+  width: 80%;
+  background-color: rebeccapurple;
+}
+
+.container div {
+  background-color: lightseagreen;
+  text-align: center;
+  padding: 25px;
+  font-size: 3em;
+  color: rebeccapurple;
+}

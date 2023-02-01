@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rosybrown;
+  font-family: 'Barlow', 'sans-serif';
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  padding: 30px;
+  color: darkred;
+}
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+
+  grid-auto-flow: row;
+  grid-auto-columns: minmax(50px, 0.5fr);
+  align-items: start;
+  width: 80%;
+
+  background-color: darkred;
+  margin: 0 auto;
+  border: 20px solid darkred;
+}
+
+.container div {
+  background-color: sandybrown;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 3em;
+  color: darkred;
+}
+
+.container .impl {
+  background-color: lightgoldenrodyellow;
+  grid-column-start: 4;
+}
