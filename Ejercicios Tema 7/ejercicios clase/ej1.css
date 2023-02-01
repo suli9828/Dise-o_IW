@@ -38,8 +38,7 @@ h1 {
   grid-gap: 20px;
   grid-column-start: 3;
   grid-row-start: 2;
-  grid-column-end: 3;
-  grid-row-end: 4;
+  grid-column-end: span 2;
 }
 
 .c2 {
@@ -47,6 +46,28 @@ h1 {
   grid-gap: 20px;
   grid-column-start: 1;
   grid-row-start: 4;
+}
+
+.c3 {
+  display: grid;
+  grid-gap: 20px;
+  grid-column-start: 4;
+  grid-row-start: 1;
+}
+
+.c4 {
+  display: grid;
+  grid-gap: px;
+  grid-column-start: 1;
+  grid-row-start: 5;
+  grid-column-end: 5;
+}
+
+.c8 {
+  display: grid;
+  grid-gap: 20px;
+  grid-column-start: span 1;
+  grid-row-end: 3;
 }
 
 .c9 {
@@ -57,33 +78,11 @@ h1 {
   grid-column-end: 4;
 }
 
-.c8 {
-  display: grid;
-  grid-gap: 20px;
-  grid-column-start: span 1;
-  grid-row-end: 3;
-}
-
-.c3 {
-  display: grid;
-  grid-gap: 20px;
-  grid-column-start: 4;
-  grid-row-start: 1;
-}
-
 .c10 {
   display: grid;
   grid-gap: 20px;
   grid-column-start: 2;
   grid-row-start: 3;
-}
-
-.c4 {
-  display: grid;
-  grid-gap: px;
-  grid-column-start: 1;
-  grid-row-start: 5;
-  grid-column-end: 5;
 }
 
 .container div {
