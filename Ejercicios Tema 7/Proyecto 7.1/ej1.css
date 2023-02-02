@@ -2,4 +2,120 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Electrolize', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 4em;
+  display: grid;
+  justify-content: center;
+  margin: 20px;
+  color: gray;
+  font-weight: bolder;
+  text-shadow: 5px 5px 5px white;
+}
+
+p {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorPrincipal {
+  margin: 20px;
+  border: 7px solid grey;
+  padding: 20px;
+  background-color: rgb(250, 231, 211);
+}
+
+.semana {
+  margin-bottom: 10px;
+  display: grid;
+  justify-content: space-between;
+  width: 50vw;
+  height: 8.5vh;
+  padding-top: 0.8vh;
+  background-color: grey;
+  color: white;
+  box-shadow: 5px 5px 5px white;
+  border-radius: 30px;
+  grid-template-columns: repeat(7, 5fr);
+}
+
+.letras {
+  display: grid;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 3em;
+  align-self: center;
+}
+
+.calendario {
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: space-around;
+  width: 50vw;
+  grid-template-columns: repeat(7, 9fr);
+}
+
+.calendario div:first-child {
+  grid-column-start: 6;
+}
+
+.dias {
+  transition: all 0.5s linear;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 8px;
+  padding-top: 0.6vh;
+  width: 6vw;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
+  background-color: grey;
+}
+
+.festivo {
+  background-color: red;
+}
+
+.finde {
+  background-color: rgb(255, 0, 85);
+}
+
+.semanaSantayPascua {
+  background-color: rgb(166, 212, 202);
+}
+
+.dias:hover {
+  transition: all 0.2s linear;
+  background-color: black;
+  color: white;
+}
+
+.festivo:hover {
+  transition: all 0.2s linear;
+  background-color: black;
+  color: red;
+}
+
+.finde:hover {
+  transition: all 0.2s linear;
+  background-color: black;
+  color: rgb(255, 0, 85);
+}
+
+.semanaSantayPascua:hover {
+  transition: all 0.2s linear;
+  background-color: black;
+  color: rgb(166, 212, 202);
 }
