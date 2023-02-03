@@ -1,1 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: blanchedalmond;
+  background-image: url(./img/fondoH.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  height: 35vh;
+  text-align: center;
+  color: whitesmoke;
+}
+
+header p {
+  margin: 3vh 7.5vw;
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+h1 {
+  padding-top: 8.5vh;
+  font-family: 'Courgette', cursive;
+  font-size: 2.8em;
+  text-decoration: underline 5px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
+  justify-content: center;
+  grid-gap: 12px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+footer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 14vh;
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  font-weight: bold;
+  font-size: 1.8em;
+  padding-bottom: 5px;
+  color: white;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.imagen {
+  width: 100%;
+  height: 100%;
+}
+
+.nombreLugar {
+  position: absolute;
+  padding-top: 0.2vh;
+  padding-left: 0.5vw;
+  height: 10%;
+  font-family: 'Courgette', cursive;
+  font-weight: bold;
+}
+
+.pais {
+  position: absolute;
+  bottom: 0%;
+  text-align: right;
+  padding-top: 0.2vh;
+  padding-bottom: 0.2vh;
+  padding-right: 0.5vw;
+  height: 10%;
+  width: 100%;
+  font-family: 'Courgette', cursive;
+  font-weight: bold;
+}
+
+.pais,
+.nombreLugar {
+  background-color: rgba(218, 217, 217, 0.589);
+  width: 100%;
+  border-radius: 2px;
+  transition: opacity 0.5s linear;
+}
+
+.marco {
+  background-color: blanchedalmond;
+  width: 95%;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 250px;
+  transition: transform 0.4s linear;
+}
+
+.marco:hover {
+  position: relative;
+  transform: scale(110%);
+  transition: transform 0.5s linear;
+  z-index: 2;
+}
+
+.marco:hover .nombreLugar,
+.marco:hover .pais {
+  opacity: 0%;
+  transition: opacity 0.5s linear;
+}
