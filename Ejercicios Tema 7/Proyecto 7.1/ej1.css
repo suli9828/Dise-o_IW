@@ -60,6 +60,16 @@ p {
   align-self: center;
 }
 
+.letrasF {
+  display: grid;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 3em;
+  color: rgb(255, 0, 85);
+  text-shadow: 2px 2px 5px black;
+  align-self: center;
+}
+
 .calendario {
   display: grid;
   grid-auto-flow: row;
