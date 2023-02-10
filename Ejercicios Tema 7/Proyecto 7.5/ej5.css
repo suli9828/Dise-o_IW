@@ -27,6 +27,7 @@ body {
   letter-spacing: 5px;
   text-shadow: 8px 8px 8px black;
   font-family: 'Pokemon Solid';
+  padding-top: 20px;
 }
 
 .contenedor {
@@ -93,7 +94,6 @@ body {
   );
   text-shadow: 0px 0px 20px rgb(252, 0, 252);
   position: absolute;
-  z-index: 2;
   font-size: 1.5vw;
   color: white;
   font-family: 'Pokemon Solid';
@@ -118,7 +118,7 @@ body {
   font-family: 'Pokemon Classic';
 }
 
-.cortina {
+.efectoNombre {
   position: absolute;
   border-radius: 1px;
   background-color: rgb(255, 0, 255);
@@ -304,7 +304,7 @@ body {
   width: 90%;
 }
 
-.contTarjeta:hover .cortina {
+.contTarjeta:hover .efectoNombre {
   transition: width 0.8s 0.5s linear;
   left: 100%;
   transform-origin: left;
@@ -314,10 +314,10 @@ body {
 
 @font-face {
   font-family: 'Pokemon Solid';
-  src: url(./fonts/PokemonSolid.ttf) format('truetype');
+  src: url(./fonts/Pokemon\ Solid.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Pokemon Classic';
-  src: url(./fonts/PokemonClassic.ttf) format('truetype');
+  src: url(./fonts/Pokemon\ Classic.ttf) format('truetype');
 }
