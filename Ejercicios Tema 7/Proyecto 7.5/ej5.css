@@ -1,3 +1,5 @@
+/*Profesor, he puesto el aspect-ratio 1/1 pero en Chrome se ve bien y en Firefox se cambian los tamaños y no entiendo porqué,
+ para no estropearlo lo he dejado tal cual.*/
 * {
   margin: 0;
   padding: 0;
@@ -127,6 +129,17 @@ body {
   opacity: 0;
   transition: all 0s linear;
   transform: rotateY(180deg);
+}
+
+.regigigas,
+.golett,
+.totodile,
+.gengar,
+.garchomp,
+.electivire,
+.empoleon,
+.zorua {
+  aspect-ratio: 1 / 1;
 }
 
 .front,
