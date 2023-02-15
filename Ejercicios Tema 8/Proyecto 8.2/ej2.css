@@ -1,1 +1,709 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
+header {
+  background-color: #9d81d4;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding-right: 16vw;
+  padding-top: 4rem;
+}
+
+.redesSociales {
+  color: #9d81d4;
+  background-color: blanchedalmond;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+i {
+  transition: all 1s linear;
+  color: #9d81d4;
+  font-size: 2rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.menuContributors {
+  transition: all 0.5s linear;
+  color: rgb(68, 66, 153);
+  font-size: 1.4rem;
+  font-family: 'Lexend Mega', cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  width: 16.15vw;
+  margin: 3px;
+  padding: 5px;
+}
+
+body {
+  background-color: rgba(203, 196, 236, 0.5);
+}
+
+main {
+  display: flex;
+  flex-flow: row;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Lexend Mega', cursive;
+  display: flex;
+  flex-flow: row;
+  align-self: center;
+  color: blanchedalmond;
+}
+
+h2 {
+  font-family: 'Lexend Mega', cursive;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-family: 'Lexend Mega', cursive;
+  margin: 10px;
+  color: blanchedalmond;
+  text-decoration: underline #9d81d4 3px;
+  text-shadow: 0px 0px 4px black;
+}
+
+h4 {
+  font-family: 'Lexend Mega', cursive;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 15px;
+  color: #9d81d4;
+  text-shadow: 0px 0px 1px #9d81d4;
+}
+
+.imagenLogo {
+  display: flex;
+  width: 10%;
+}
+
+.imagenBloque2 {
+  transition: all 0.5s linear;
+  filter: grayscale(100%);
+  padding: 10px;
+  display: flex;
+  float: left;
+  width: 25%;
+}
+
+strong {
+  color: blanchedalmond;
+  text-shadow: 0px 0px 4px black;
+}
+
+img {
+  transition: all 0.5s linear;
+  font-size: 10vw;
+  width: 100%;
+}
+
+hr {
+  transition: all 1s linear;
+  color: #9d81d4;
+  opacity: 0%;
+  width: 0%;
+  display: flex;
+  align-self: center;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 3px solid #9d81d4;
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: 'Habibi', sans-serif;
+  text-align: justify;
+  line-height: 30px;
+  padding: 10px;
+}
+
+.bloque1 {
+  transition: all 1s linear;
+  width: 30vw;
+  display: flex;
+  flex-flow: column;
+}
+
+.bloque1 div {
+  transition: all 1s linear;
+}
+
+.bloque1 div:nth-child(odd) {
+  display: flex;
+  flex-flow: column;
+  align-self: flex-end;
+}
+
+.species {
+  margin: 5px;
+  width: 20vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: blanchedalmond;
+  flex-flow: column;
+}
+
+.species h2 {
+  transition: all 0.5s linear;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #9d81d4;
+  text-align: center;
+}
+
+.location {
+  margin: 5px;
+  width: 20vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: blanchedalmond;
+  flex-flow: column;
+}
+
+.location h2 {
+  transition: all 0.5s linear;
+  color: white;
+  background-color: #9d81d4;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.equator {
+  margin: 5px;
+  width: 20vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: blanchedalmond;
+  display: flex;
+  flex-flow: column;
+}
+
+.equator h2 {
+  transition: all 0.5s linear;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #9d81d4;
+  text-align: center;
+}
+
+.wings {
+  margin: 5px;
+  width: 20vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: blanchedalmond;
+  flex-flow: column;
+}
+
+.wings h2 {
+  transition: all 0.5s linear;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: #9d81d4;
+  text-align: center;
+}
+
+.jumping {
+  margin: 5px;
+  width: 20vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: blanchedalmond;
+  display: flex;
+  flex-flow: column;
+}
+
+.jumping h2 {
+  transition: all 0.5s linear;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #9d81d4;
+  text-align: center;
+}
+
+.colors {
+  margin: 5px;
+  width: 20vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: blanchedalmond;
+  display: flex;
+  flex-flow: column;
+}
+
+.colors h2 {
+  transition: all 0.5s linear;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: #9d81d4;
+  text-align: center;
+}
+
+.diet {
+  margin: 5px;
+  width: 20vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: blanchedalmond;
+  display: flex;
+  flex-flow: column;
+}
+
+.diet h2 {
+  transition: all 0.5s linear;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #9d81d4;
+  text-align: center;
+}
+
+.eyesight {
+  margin: 5px;
+  width: 20vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: blanchedalmond;
+  display: flex;
+  flex-flow: column;
+}
+
+.eyesight h2 {
+  transition: all 0.5s linear;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: #9d81d4;
+  text-align: center;
+}
+
+.size {
+  margin: 5px;
+  width: 20vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: blanchedalmond;
+  display: flex;
+  flex-flow: column;
+}
+
+.size h2 {
+  transition: all 0.5s linear;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #9d81d4;
+  text-align: center;
+}
+
+.bloque2 {
+  width: 41vw;
+  display: flex;
+  flex-flow: column;
+}
+
+.bloque3 p {
+  text-shadow: 0px 0px 1px white;
+  color: black;
+}
+
+.bloque3 img {
+  border-bottom: 2px solid rgb(68, 66, 153);
+}
+
+.kenny,
+.john,
+.yoda,
+.bart,
+.patrick,
+.mario {
+  margin: 10px;
+  border: 2px solid rgb(68, 66, 153);
+  scroll-margin-top: 4rem;
+}
+
+.titColumna3 {
+  width: 100%;
+}
+
+.bloque3 {
+  width: 30vw;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.pequeño {
+  min-width: 170px;
+  display: flex;
+  flex: 1 0 35%;
+}
+
+.antartida {
+  margin: 10px;
+  width: 100vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: blanchedalmond;
+  display: flex;
+  flex-flow: column;
+}
+
+.galapago {
+  margin: 10px;
+  width: 100vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: blanchedalmond;
+  display: flex;
+  flex-flow: column;
+}
+
+.africa {
+  margin: 10px;
+  width: 15vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: blanchedalmond;
+  display: flex;
+  flex-flow: column;
+}
+
+.chile {
+  margin: 10px;
+  width: 15vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: blanchedalmond;
+  display: flex;
+  flex-flow: column;
+}
+
+.namibia {
+  margin: 10px;
+  width: 15vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: blanchedalmond;
+  display: flex;
+  flex-flow: column;
+}
+
+.zelanda {
+  margin: 10px;
+  width: 15vw;
+  border: 2px solid rgb(68, 66, 153);
+  background-color: blanchedalmond;
+  display: flex;
+  flex-flow: column;
+}
+
+.readMore {
+  color: blanchedalmond;
+  transition: all 1s linear;
+  font-family: 'Lexend Mega', cursive;
+  padding: 5px;
+  font-size: 1.3rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 10px;
+  border: 2px solid black;
+  background-color: #9d81d4;
+}
+
+footer {
+  background-color: #9d81d4;
+  height: 50px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.pie {
+  font-family: 'Lexend Mega', cursive;
+  font-size: 1.2rem;
+  color: rgb(238, 216, 183);
+  display: flex;
+  flex-flow: row nowrap;
+  align-self: center;
+}
+
+.bloque1 div:hover {
+  transition: all 0.5s linear;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px black;
+}
+
+.bloque1 h2:hover {
+  transition: all 0.5s linear;
+  letter-spacing: 3px;
+}
+
+.bloque2 .kenny:hover {
+  transition: all 0.5s linear;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px black;
+  background-color: #d6c4fc;
+}
+
+.bloque2 .john:hover {
+  transition: all 0.5s linear;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px black;
+  background-color: #d6c4fc;
+}
+
+.bloque2 .yoda:hover {
+  transition: all 0.5s linear;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px black;
+  background-color: #d6c4fc;
+}
+
+.bloque2 .bart:hover {
+  transition: all 0.5s linear;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px black;
+  background-color: #d6c4fc;
+}
+
+.bloque2 .patrick:hover {
+  transition: all 0.5s linear;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px black;
+  background-color: #d6c4fc;
+}
+
+.bloque2 .mario:hover {
+  transition: all 0.5s linear;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px black;
+  background-color: #d6c4fc;
+}
+
+.bloque2 div:hover .imagenBloque2 {
+  transition: all 0.2s linear;
+  filter: grayscale(0%);
+}
+
+.bloque3 *:hover hr {
+  transition: all 1s linear;
+  color: blanchedalmond;
+  opacity: 100%;
+  width: 80%;
+}
+
+.bloque3 div:hover {
+  transition: all 0.5s linear;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px black;
+}
+
+.menuKenny:hover {
+  transition: all 0.5s linear;
+  color: orange;
+  text-shadow: 0px 1px 1px black;
+}
+
+.menuRambo:hover {
+  transition: all 0.5s linear;
+  color: black;
+  text-shadow: 0px 1px 1px black;
+}
+
+.menuSimpson:hover {
+  transition: all 0.5s linear;
+  color: yellow;
+  text-shadow: 0px 1px 1px black;
+}
+
+.menuPatrick:hover {
+  transition: all 0.5s linear;
+  color: pink;
+  text-shadow: 0px 1px 1px black;
+}
+
+.menuYoda:hover {
+  transition: all 0.5s linear;
+  color: green;
+  text-shadow: 0px 1px 1px black;
+}
+
+.menuMario:hover {
+  transition: all 0.5s linear;
+  color: red;
+  text-shadow: 0px 1px 1px black;
+}
+
+.socialInstagram:hover .fa-instagram-square {
+  transition: all 0.5s linear;
+  color: rgb(219, 23, 115);
+}
+
+.socialTwitter:hover .fa-twitter-square {
+  transition: all 0.5s linear;
+  color: rgb(36, 153, 231);
+}
+
+.socialYoutube:hover .fa-youtube-square {
+  transition: all 0.5s linear;
+  color: red;
+}
+
+.socialTiktok:hover .fa-tiktok {
+  transition: all 0.5s linear;
+  color: black;
+  text-shadow: 1px 1px 1px rgb(214, 18, 198);
+}
+
+@media screen and (max-width: 1000px) {
+  header h2 {
+    font-size: 1rem;
+  }
+
+  .imagenLogo {
+    width: 100%;
+  }
+
+  .imagenLogo img {
+    width: 100%;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-self: center;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .menuContributors {
+    transition: all 0.5s linear;
+    color: rgb(68, 66, 153);
+    font-size: 1.4rem;
+    font-family: 'Lexend Mega', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    margin: 3px;
+    padding: 5px;
+  }
+
+  .menuKenny:hover::after {
+    animation: none;
+  }
+
+  main {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .bloque1 {
+    width: 95%;
+    font-size: 2rem;
+  }
+
+  .species {
+    width: 99%;
+  }
+
+  .location {
+    width: 99%;
+  }
+
+  .equator {
+    width: 99%;
+  }
+
+  .wings {
+    width: 99%;
+  }
+
+  .jumping {
+    width: 99%;
+  }
+
+  .colors {
+    width: 99%;
+  }
+
+  .diet {
+    width: 99%;
+  }
+
+  .eyesight {
+    width: 99%;
+  }
+
+  .size {
+    width: 99%;
+  }
+
+  .bloqueCentral {
+    width: 95%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .bloqueCentral div {
+    width: 95%;
+    margin-top: 1rem;
+  }
+
+  /* bloque derecha */
+  .bloqueDerecha {
+    width: 90%;
+    font-size: 2rem;
+  }
+
+  .contenedores_der div {
+    flex-basis: 100%;
+  }
+
+  .contenedores_der div h4 {
+    font-size: 2rem;
+  }
+
+  footer p {
+    font-size: 2rem;
+  }
+}
