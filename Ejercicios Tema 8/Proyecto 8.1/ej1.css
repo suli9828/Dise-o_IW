@@ -23,7 +23,7 @@ main {
   margin-top: -10px;
   padding-bottom: 20px;
   background-color: gray;
-  width: 92vw;
+  width: 95vw;
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
@@ -56,18 +56,17 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 3vw;
   font-family: 'Cantarell', sans-serif;
   text-shadow: 0px 0px 8px black;
   color: whitesmoke;
-  font-size: 1.5em;
   margin-top: 8px;
   margin-bottom: 15px;
   z-index: 5;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 2vw;
   font-family: 'Cantarell', sans-serif;
   text-shadow: 0px 0px 8px black;
   color: whitesmoke;
@@ -97,6 +96,13 @@ hr {
   z-index: 5;
 }
 
+.contenedorDoble1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex: 1 0 70%;
+}
+
 .contenedorDoble {
   display: flex;
   flex-direction: row;
@@ -108,7 +114,7 @@ hr {
   position: relative;
   display: flex;
   align-self: center;
-  width: 50%;
+  width: 55%;
 }
 
 img {
@@ -122,7 +128,7 @@ img {
   flex-flow: row;
   align-self: center;
   transition: all 2s linear;
-  margin: 22px;
+  margin-top: 40px;
   border: 2px solid black;
   box-shadow: 0px 0px 20px black;
   border-radius: 50%;
@@ -145,10 +151,10 @@ img {
 p {
   transition: all 1s linear;
   opacity: 0%;
-  font-size: 1.2em;
+  font-size: 1.8vw;
   font-weight: bolder;
   text-shadow: 0px 0px 4px black;
-  transform: translateY(-30px);
+  transform: translateY(50px);
   font-family: 'Cantarell', sans-serif;
   color: whitesmoke;
   margin-top: 5px;
@@ -197,7 +203,7 @@ p {
   border-radius: 40%;
   overflow: hidden;
   z-index: 1;
-  top: -350px;
+  top: -400px;
 }
 
 .team1 {
@@ -267,14 +273,14 @@ p {
 
 .contenedorPersonajes:hover .imgPersonaje {
   transition: all 1s linear;
-  border: 4px solid white;
+  border: 7px solid black;
   box-shadow: 0px 0px 20px white;
   z-index: 5;
 }
 
 .contenedorPersonajes:hover .imgPersonajePequeño {
   transition: all 1s linear;
-  border: 4px solid white;
+  border: 7px solid black;
   box-shadow: 0px 0px 20px white;
   z-index: 5;
 }
@@ -326,143 +332,11 @@ p {
   top: -150px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .contenedorPersonajes:hover {
     position: relative;
     transition: all 1s linear;
-    width: 78%;
-    border: 1px solid black;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: 48px;
-    margin-right: 48px;
-    overflow: hidden;
-  }
-
-  .contenedorDoble {
-    flex-direction: column;
-  }
-
-  .imgPersonajePequeño {
-    width: 10vw;
-    min-width: 320px;
-    display: flex;
-    flex: 1 0 25%;
-  }
-
-  .contenedorPersonajes {
-    width: 78%;
-    margin-left: 48px;
-    margin-right: 48px;
-  }
-
-  hr {
-    text-shadow: 0px 0px 8px black;
-    display: flex;
-    flex-flow: row;
-    align-self: center;
-    transition: all 2s linear;
-    z-index: 5;
-    width: 24vw;
-    color: white;
-    opacity: 100%;
-  }
-
-  .imgPersonaje {
-    border: 4px solid white;
-    box-shadow: 0px 0px 20px white;
-    z-index: 5;
-    position: relative;
-    display: flex;
-    flex-flow: row;
-    align-self: center;
-    transition: all 2s linear;
-    margin: 22px;
-    border-radius: 50%;
-    z-index: 5;
-  }
-
-  .imgPersonajePequeño {
-    border: 4px solid white;
-    box-shadow: 0px 0px 20px white;
-    z-index: 5;
-    flex-flow: row;
-    align-self: center;
-    transition: all 2s linear;
-    margin: 10px;
-    border-radius: 50%;
-    width: 210px;
-    height: 210px;
-    z-index: 5;
-  }
-
-  .iconos {
-    height: 70px;
-    opacity: 100%;
-    padding-top: 2px;
-    width: 320px;
-    z-index: 5;
-  }
-
-  .team1 i:hover,
-  .team2 i:hover,
-  .team3 i:hover,
-  .team4 i:hover {
-    transition: all 0.5s linear;
-    color: black;
-    background-color: rgb(128, 128, 128);
-    font-size: 3.5em;
-    padding: 5px;
-    margin-left: 8px;
-    margin-right: 8px;
-    z-index: 5;
-  }
-
-  p {
-    transition: all 1s linear;
-    opacity: 100%;
-    transform: translateY(0px);
-    z-index: 1;
-  }
-
-  .contenedorPersonajes:hover .redes {
-    transition: all 1s linear;
-    transform: translatey(0px);
-    opacity: 100%;
-    position: absolute;
-    bottom: 0%;
-    background-color: rgb(128, 128, 128);
-    width: 101%;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    align-self: center;
-    flex-wrap: wrap;
-    z-index: 5;
-  }
-
-  .redes {
-    transform: translatey(0px);
-    opacity: 100%;
-  }
-
-  .circuloGran {
-    top: -190px;
-  }
-
-  .circuloPeq {
-    top: -150px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .contenedorPersonajes:hover {
-    position: relative;
-    transition: all 1s linear;
-    width: 91%;
+    width: 91vw;
     border: 1px solid black;
     text-align: center;
     display: flex;
@@ -474,12 +348,17 @@ p {
     overflow: hidden;
   }
 
+  .contenedorDoble1 {
+    flex-direction: column;
+    width: 95vw;
+  }
+
   .contenedorDoble {
     flex-direction: column;
   }
 
   .contenedorPersonajes {
-    width: 91%;
+    width: 91vw;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -497,25 +376,23 @@ p {
   }
 
   .imgPersonaje {
-    border: 4px solid white;
-    box-shadow: 0px 0px 20px white;
-    z-index: 5;
     position: relative;
     display: flex;
     flex-flow: row;
     align-self: center;
     transition: all 2s linear;
+    border: 7px solid black;
+    box-shadow: 0px 0px 20px white;
     margin: 0px;
     z-index: 5;
   }
 
   .imgPersonajePequeño {
-    border: 4px solid white;
-    box-shadow: 0px 0px 20px white;
-    z-index: 5;
     flex-flow: row;
     align-self: center;
     transition: all 2s linear;
+    border: 7px solid black;
+    box-shadow: 0px 0px 20px white;
     margin: 10px;
     border-radius: 50%;
     width: 210px;
@@ -571,14 +448,18 @@ p {
     display: flex;
     flex-flow: row;
     justify-content: space-around;
+    border-top: 6px solid black;
+    border-bottom: 6px solid black;
     align-self: center;
     flex-wrap: wrap;
     z-index: 5;
   }
 
   .redes {
-    transform: translatey(0px);
+    transform: translateY(0px);
     opacity: 100%;
+    border-top: 6px solid black;
+    border-bottom: 6px solid black;
   }
 
   .circuloGran {
