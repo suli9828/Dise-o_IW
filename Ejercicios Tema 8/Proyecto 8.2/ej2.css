@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 header {
@@ -18,7 +17,7 @@ header {
   justify-content: space-between;
   font-size: 1rem;
   padding-right: 16vw;
-  padding-top: 4rem;
+  padding-top: 4em;
 }
 
 .redesSociales {
@@ -86,7 +85,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.8em;
   font-family: 'Lexend Mega', cursive;
   margin: 10px;
   color: blanchedalmond;
@@ -96,7 +95,7 @@ h3 {
 
 h4 {
   font-family: 'Lexend Mega', cursive;
-  font-size: 1.4rem;
+  font-size: 1.4em;
   text-align: center;
   margin: 15px;
   color: #9d81d4;
@@ -357,7 +356,7 @@ p {
 .mario {
   margin: 10px;
   border: 2px solid rgb(68, 66, 153);
-  scroll-margin-top: 4rem;
+  scroll-margin-top: 4em;
 }
 
 .titColumna3 {
@@ -436,7 +435,7 @@ p {
   transition: all 1s linear;
   font-family: 'Lexend Mega', cursive;
   padding: 5px;
-  font-size: 1.3rem;
+  font-size: 1.3em;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -455,7 +454,7 @@ footer {
 
 .pie {
   font-family: 'Lexend Mega', cursive;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   color: rgb(238, 216, 183);
   display: flex;
   flex-flow: row nowrap;
@@ -590,7 +589,76 @@ footer {
   text-shadow: 1px 1px 1px rgb(214, 18, 198);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
+  header h2 {
+    font-size: 1rem;
+  }
+
+  .imagenLogo {
+    width: 100%;
+  }
+
+  .imagenLogo img {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    align-self: center;
+    color: blanchedalmond;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-self: center;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .menuContributors {
+    transition: all 0.5s linear;
+    color: rgb(68, 66, 153);
+    font-size: 1.4rem;
+    font-family: 'Lexend Mega', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    margin: 3px;
+    padding: 5px;
+  }
+
+  .bloque1 {
+    transition: all 1s linear;
+    width: 30vw;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .bloque1 div {
+    transition: all 1s linear;
+    width: 27vw;
+    align-self: center;
+  }
+
+  .bloque1 div:nth-child(odd) {
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
   header h2 {
     font-size: 1rem;
   }
@@ -625,85 +693,59 @@ footer {
     padding: 5px;
   }
 
-  .menuKenny:hover::after {
-    animation: none;
-  }
-
   main {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
 
+  h3 {
+    text-align: left;
+  }
+
   .bloque1 {
-    width: 95%;
-    font-size: 2rem;
-  }
-
-  .species {
-    width: 99%;
-  }
-
-  .location {
-    width: 99%;
-  }
-
-  .equator {
-    width: 99%;
-  }
-
-  .wings {
-    width: 99%;
-  }
-
-  .jumping {
-    width: 99%;
-  }
-
-  .colors {
-    width: 99%;
-  }
-
-  .diet {
-    width: 99%;
-  }
-
-  .eyesight {
-    width: 99%;
-  }
-
-  .size {
-    width: 99%;
-  }
-
-  .bloqueCentral {
-    width: 95%;
-    font-size: 2rem;
+    transition: all 1s linear;
+    order: 3;
+    width: 95vw;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    flex-flow: column;
   }
 
-  .bloqueCentral div {
+  .bloque1 div {
+    transition: all 1s linear;
     width: 95%;
-    margin-top: 1rem;
+    align-self: center;
   }
 
-  /* bloque derecha */
-  .bloqueDerecha {
-    width: 90%;
-    font-size: 2rem;
+  .bloque1 div:nth-child(odd) {
+    display: flex;
+    flex-flow: column;
+    align-self: flex-end;
   }
 
-  .contenedores_der div {
-    flex-basis: 100%;
+  .bloque2 {
+    transition: all 1s linear;
+    width: 95%;
+    display: flex;
+    flex-flow: column;
   }
 
-  .contenedores_der div h4 {
-    font-size: 2rem;
+  .bloque3 {
+    transition: all 1s linear;
+    width: 95%;
+    display: flex;
+    flex-flow: column;
   }
 
-  footer p {
-    font-size: 2rem;
+  .bloque3 div {
+    transition: all 1s linear;
+    width: 95%;
+    align-self: center;
+  }
+
+  .bloque1:hover {
+    transition: all 1s linear;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px black;
   }
 }
