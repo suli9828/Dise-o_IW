@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 header {
@@ -16,8 +17,8 @@ header {
   flex-flow: row;
   justify-content: space-between;
   font-size: 1rem;
-  padding-right: 16vw;
-  padding-top: 4em;
+  padding-right: 6vw;
+  padding-top: 3em;
 }
 
 .redesSociales {
@@ -660,7 +661,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   header h2 {
-    font-size: 1rem;
+    font-size: 3vw;
   }
 
   .imagenLogo {
@@ -675,7 +676,7 @@ footer {
     flex-direction: column;
     align-self: center;
     width: 95%;
-    margin: 0 auto;
+    margin-right: 13px;
   }
 
   .menuContributors {
@@ -743,9 +744,133 @@ footer {
     align-self: center;
   }
 
-  .bloque1:hover {
+  .socialInstagram .fa-instagram-square {
+    transition: all 0.5s linear;
+    color: rgb(219, 23, 115);
+  }
+
+  .socialTwitter .fa-twitter-square {
+    color: rgb(36, 153, 231);
+  }
+
+  .socialYoutube .fa-youtube-square {
+    color: red;
+  }
+
+  .socialTiktok .fa-tiktok {
+    color: black;
+    text-shadow: 1px 1px 1px rgb(214, 18, 198);
+  }
+
+  .bloque1 {
     transition: all 1s linear;
     border-radius: 15px;
+  }
+
+  .bloque1 div {
+    transition: all 0.5s linear;
+    border-radius: 15px;
     box-shadow: 0px 5px 5px black;
+  }
+
+  .bloque1 h2 {
+    transition: all 0.5s linear;
+    letter-spacing: 3px;
+  }
+
+  .bloque2 .kenny {
+    transition: all 0.5s linear;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px black;
+    background-color: #d6c4fc;
+  }
+
+  .bloque2 .john {
+    transition: all 0.5s linear;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px black;
+    background-color: #d6c4fc;
+  }
+
+  .bloque2 .yoda {
+    transition: all 0.5s linear;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px black;
+    background-color: #d6c4fc;
+  }
+
+  .bloque2 .bart {
+    transition: all 0.5s linear;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px black;
+    background-color: #d6c4fc;
+  }
+
+  .bloque2 .patrick {
+    transition: all 0.5s linear;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px black;
+    background-color: #d6c4fc;
+  }
+
+  .bloque2 .mario {
+    transition: all 0.5s linear;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px black;
+    background-color: #d6c4fc;
+  }
+
+  .bloque2 div .imagenBloque2 {
+    transition: all 0.2s linear;
+    filter: grayscale(0%);
+  }
+
+  .bloque3 * hr {
+    transition: all 1s linear;
+    color: blanchedalmond;
+    opacity: 100%;
+    width: 80%;
+  }
+
+  .bloque3 div {
+    transition: all 0.5s linear;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px black;
+  }
+
+  .menuKenny {
+    transition: all 0.5s linear;
+    color: orange;
+    text-shadow: 0px 1px 1px black;
+  }
+
+  .menuRambo {
+    transition: all 0.5s linear;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+  }
+
+  .menuSimpson {
+    transition: all 0.5s linear;
+    color: yellow;
+    text-shadow: 0px 1px 1px black;
+  }
+
+  .menuPatrick {
+    transition: all 0.5s linear;
+    color: pink;
+    text-shadow: 0px 1px 1px black;
+  }
+
+  .menuYoda {
+    transition: all 0.5s linear;
+    color: green;
+    text-shadow: 0px 1px 1px black;
+  }
+
+  .menuMario {
+    transition: all 0.5s linear;
+    color: red;
+    text-shadow: 0px 1px 1px black;
   }
 }
