@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto 6.5</title>
+    <title>Proyecto 8.5</title>
     <link rel="stylesheet" href="./ej5.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +17,12 @@
   </head>
   <body>
     <header>
+      <div class="contenedorLineas">
+        <div class="linea1 borde1"></div>
+        <div class="linea2 borde2"></div>
+        <div class="linea3 borde3"></div>
+      </div>
+
       <div class="menu menuDesplegado menuPlegado">
         <h1 class="inicio">Inicio</h1>
         <div class="clases">
@@ -150,15 +156,6 @@
           $(this).parents().find('.lienzodaw').addClass('invisible');
           $(this).parents().find('.lienzodam').addClass('invisible');
           $(this).parents().find('.lienzocib').addClass('invisible');
-
-          $(this)
-            .parents()
-            .find('.contenedornavegacion')
-            .toggleClass('menu_desplegado menu_plegado');
-          $(this)
-            .parents()
-            .find('.contenedor_icono_burger')
-            .toggleClass('icono_barras icono_cruz');
         });
 
         $('.boton_asir').on('click', function () {
@@ -175,15 +172,6 @@
           $(this).parents().find('.lienzodaw').addClass('invisible');
           $(this).parents().find('.lienzodam').addClass('invisible');
           $(this).parents().find('.lienzocib').addClass('invisible');
-
-          $(this)
-            .parents()
-            .find('.contenedornavegacion')
-            .toggleClass('menu_desplegado menu_plegado');
-          $(this)
-            .parents()
-            .find('.contenedor_icono_burger')
-            .toggleClass('icono_barras icono_cruz');
         });
 
         $('.boton_daw').on('click', function () {
@@ -200,15 +188,6 @@
           $(this).parents().find('.lienzodaw').removeClass('invisible');
           $(this).parents().find('.lienzodam').addClass('invisible');
           $(this).parents().find('.lienzocib').addClass('invisible');
-
-          $(this)
-            .parents()
-            .find('.contenedornavegacion')
-            .toggleClass('menu_desplegado menu_plegado');
-          $(this)
-            .parents()
-            .find('.contenedor_icono_burger')
-            .toggleClass('icono_barras icono_cruz');
         });
 
         $('.boton_dam').on('click', function () {
@@ -225,15 +204,6 @@
           $(this).parents().find('.lienzodaw').addClass('invisible');
           $(this).parents().find('.lienzodam').removeClass('invisible');
           $(this).parents().find('.lienzocib').addClass('invisible');
-
-          $(this)
-            .parents()
-            .find('.contenedornavegacion')
-            .toggleClass('menu_desplegado menu_plegado');
-          $(this)
-            .parents()
-            .find('.contenedor_icono_burger')
-            .toggleClass('icono_barras icono_cruz');
         });
 
         $('.boton_cyber').on('click', function () {
@@ -250,15 +220,6 @@
           $(this).parents().find('.lienzodaw').addClass('invisible');
           $(this).parents().find('.lienzodam').addClass('invisible');
           $(this).parents().find('.lienzocib').removeClass('invisible');
-
-          $(this)
-            .parents()
-            .find('.contenedornavegacion')
-            .toggleClass('menu_desplegado menu_plegado');
-          $(this)
-            .parents()
-            .find('.contenedor_icono_burger')
-            .toggleClass('icono_barras icono_cruz');
         });
 
         $('.inicio').on('click', function () {
@@ -275,15 +236,6 @@
           $(this).parents().find('.lienzodaw').addClass('invisible');
           $(this).parents().find('.lienzodam').addClass('invisible');
           $(this).parents().find('.lienzocib').addClass('invisible');
-
-          $(this)
-            .parents()
-            .find('.contenedornavegacion')
-            .toggleClass('menu_desplegado menu_plegado');
-          $(this)
-            .parents()
-            .find('.contenedor_icono_burger')
-            .toggleClass('icono_barras icono_cruz');
         });
 
         $('.volver').on('click', function () {
@@ -300,21 +252,6 @@
           $(this).parents().find('.lienzodaw').addClass('invisible');
           $(this).parents().find('.lienzodam').addClass('invisible');
           $(this).parents().find('.lienzocib').addClass('invisible');
-
-          $(this)
-            .parents()
-            .find('.contenedornavegacion')
-            .toggleClass('menu_desplegado menu_plegado');
-          $(this)
-            .parents()
-            .find('.contenedor_icono_burger')
-            .toggleClass('icono_barras icono_cruz');
-        });
-
-        $('.contenedorLineas').on('click', function () {
-          $(this).toggleClass('.contenedorLineas');
-          $('.menuDesplegado').toggleClass('menuPlegado');
-          $('.menuPlegado').toggleClass('menuDesplegado');
         });
       });
     </script>
