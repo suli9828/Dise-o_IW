@@ -215,7 +215,6 @@ footer {
     text-align: justify;
   }
 
-  /*Menu cambiante*/
   .menuDesplegado {
     position: absolute;
     top: 0px;
@@ -273,30 +272,6 @@ footer {
     color: rgb(207, 207, 202);
   }
 
-  .sector1 {
-    padding-bottom: 32vh;
-  }
-
-  .sector2 {
-    padding-bottom: 30vh;
-  }
-
-  .sector3 {
-    padding-bottom: 30vh;
-  }
-
-  .sector4 {
-    padding-bottom: 30vh;
-  }
-
-  .sector5 {
-    padding-bottom: 30vh;
-  }
-
-  .sector6 {
-    padding-bottom: 30vh;
-  }
-
   .contenedorLineas {
     position: absolute;
     right: 30px;
@@ -306,7 +281,6 @@ footer {
     z-index: 15;
   }
 
-  /*Propiedades de todas las líneas*/
   .linea1,
   .linea2,
   .linea3 {
@@ -314,11 +288,10 @@ footer {
     background-color: white;
     border-radius: 5px;
     width: 50px;
-    height: 5px;
+    height: 6px;
     transition: all 0.3s linear;
   }
 
-  /*Espacio entre ellas*/
   .linea1,
   .linea2 {
     margin-bottom: 10px;
@@ -328,17 +301,16 @@ footer {
     height: 6px;
   }
 
-  /*Animación de las líneas*/
   .linea2 {
     background-color: transparent;
   }
 
   .linea1 {
-    transform: translatey(20px) rotatez(45deg);
+    transform: translatey(17px) rotatez(45deg);
   }
 
   .linea3 {
-    transform: translatey(-5px) rotatez(-45deg);
+    transform: translatey(-15px) rotatez(-45deg);
   }
 
   .borde2 {

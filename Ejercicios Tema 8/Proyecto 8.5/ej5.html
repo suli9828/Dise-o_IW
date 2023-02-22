@@ -15,12 +15,12 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
-  <body>
+  <body class="body">
     <header>
       <div class="contenedorLineas">
-        <div class="linea1 borde1"></div>
-        <div class="linea2 borde2"></div>
-        <div class="linea3 borde3"></div>
+        <div class="linea1 icono_cruz borde1"></div>
+        <div class="linea2 icono_cruz borde2"></div>
+        <div class="linea3 icono_cruz borde3"></div>
       </div>
 
       <div class="menu menuDesplegado menuPlegado">
@@ -320,13 +320,42 @@
         $('.contenedorLineas').on('click', function () {
           $(this).toggleClass('.contenedorLineas');
           $('.menuDesplegado').toggleClass('menuPlegado');
-          $('.menuPlegado').toggleClass('menuDesplegado');
         });
 
-        $('.contenedorLineas').on('click', function () {
+        $('.boton_smr').on('click', function () {
+          $(this).toggleClass('.boton_smr');
+          $('.menuDesplegado').toggleClass('menuPlegado');
+        });
+
+        $('.boton_asir').on('click', function () {
+          $(this).toggleClass('.boton_asir');
+          $('.menuDesplegado').toggleClass('menuPlegado');
+        });
+
+        $('.boton_daw').on('click', function () {
+          $(this).toggleClass('.boton_daw');
+          $('.menuDesplegado').toggleClass('menuPlegado');
+        });
+
+        $('.boton_dam').on('click', function () {
+          $(this).toggleClass('.boton_dam');
+          $('.menuDesplegado').toggleClass('menuPlegado');
+        });
+
+        $('.boton_cyber').on('click', function () {
+          $(this).toggleClass('.boton_cyber');
+          $('.menuDesplegado').toggleClass('menuPlegado');
+        });
+
+        $('.volver').on('click', function () {
+          $(this).toggleClass('.volver');
+          $('.menuDesplegado').toggleClass('menuPlegado');
+        });
+
+        '.contenedorLineas'.on('click', function () {
           $(this)
             .parents()
-            .find('.borde1 .borde2 .borde3')
+            .find('.contenedorLineas')
             .toggleClass('.linea1 .linea2 .linea3 ');
           $(this)
             .parents()
