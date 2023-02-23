@@ -18,9 +18,9 @@
   <body class="body">
     <header>
       <div class="contenedorLineas">
-        <div class="linea1 icono_cruz borde1"></div>
-        <div class="linea2 icono_cruz borde2"></div>
-        <div class="linea3 icono_cruz borde3"></div>
+        <div class="linea1"></div>
+        <div class="linea2"></div>
+        <div class="linea3"></div>
       </div>
 
       <div class="menu menuDesplegado menuPlegado">
@@ -156,15 +156,6 @@
           $(this).parents().find('.lienzodaw').addClass('invisible');
           $(this).parents().find('.lienzodam').addClass('invisible');
           $(this).parents().find('.lienzocib').addClass('invisible');
-
-          $(this)
-            .parents()
-            .find('.contenedornavegacion')
-            .toggleClass('menu_desplegado menu_plegado');
-          $(this)
-            .parents()
-            .find('.contenedor_icono_burger')
-            .toggleClass('icono_barras icono_cruz');
         });
 
         $('.boton_asir').on('click', function () {
@@ -181,15 +172,6 @@
           $(this).parents().find('.lienzodaw').addClass('invisible');
           $(this).parents().find('.lienzodam').addClass('invisible');
           $(this).parents().find('.lienzocib').addClass('invisible');
-
-          $(this)
-            .parents()
-            .find('.contenedornavegacion')
-            .toggleClass('menu_desplegado menu_plegado');
-          $(this)
-            .parents()
-            .find('.contenedor_icono_burger')
-            .toggleClass('icono_barras icono_cruz');
         });
 
         $('.boton_daw').on('click', function () {
@@ -206,15 +188,6 @@
           $(this).parents().find('.lienzodaw').removeClass('invisible');
           $(this).parents().find('.lienzodam').addClass('invisible');
           $(this).parents().find('.lienzocib').addClass('invisible');
-
-          $(this)
-            .parents()
-            .find('.contenedornavegacion')
-            .toggleClass('menu_desplegado menu_plegado');
-          $(this)
-            .parents()
-            .find('.contenedor_icono_burger')
-            .toggleClass('icono_barras icono_cruz');
         });
 
         $('.boton_dam').on('click', function () {
@@ -231,15 +204,6 @@
           $(this).parents().find('.lienzodaw').addClass('invisible');
           $(this).parents().find('.lienzodam').removeClass('invisible');
           $(this).parents().find('.lienzocib').addClass('invisible');
-
-          $(this)
-            .parents()
-            .find('.contenedornavegacion')
-            .toggleClass('menu_desplegado menu_plegado');
-          $(this)
-            .parents()
-            .find('.contenedor_icono_burger')
-            .toggleClass('icono_barras icono_cruz');
         });
 
         $('.boton_cyber').on('click', function () {
@@ -256,15 +220,6 @@
           $(this).parents().find('.lienzodaw').addClass('invisible');
           $(this).parents().find('.lienzodam').addClass('invisible');
           $(this).parents().find('.lienzocib').removeClass('invisible');
-
-          $(this)
-            .parents()
-            .find('.contenedornavegacion')
-            .toggleClass('menu_desplegado menu_plegado');
-          $(this)
-            .parents()
-            .find('.contenedor_icono_burger')
-            .toggleClass('icono_barras icono_cruz');
         });
 
         $('.inicio').on('click', function () {
@@ -281,15 +236,6 @@
           $(this).parents().find('.lienzodaw').addClass('invisible');
           $(this).parents().find('.lienzodam').addClass('invisible');
           $(this).parents().find('.lienzocib').addClass('invisible');
-
-          $(this)
-            .parents()
-            .find('.contenedornavegacion')
-            .toggleClass('menu_desplegado menu_plegado');
-          $(this)
-            .parents()
-            .find('.contenedor_icono_burger')
-            .toggleClass('icono_barras icono_cruz');
         });
 
         $('.volver').on('click', function () {
@@ -306,15 +252,6 @@
           $(this).parents().find('.lienzodaw').addClass('invisible');
           $(this).parents().find('.lienzodam').addClass('invisible');
           $(this).parents().find('.lienzocib').addClass('invisible');
-
-          $(this)
-            .parents()
-            .find('.contenedornavegacion')
-            .toggleClass('menu_desplegado menu_plegado');
-          $(this)
-            .parents()
-            .find('.contenedor_icono_burger')
-            .toggleClass('icono_barras icono_cruz');
         });
 
         $('.contenedorLineas').on('click', function () {
@@ -352,15 +289,140 @@
           $('.menuDesplegado').toggleClass('menuPlegado');
         });
 
-        '.contenedorLineas'.on('click', function () {
-          $(this)
-            .parents()
-            .find('.contenedorLineas')
-            .toggleClass('.linea1 .linea2 .linea3 ');
-          $(this)
-            .parents()
-            .find('.linea1 .linea2 .linea3')
-            .toggleClass('.borde1 .borde2 .borde3');
+        $('.contenedorLineas').on('click', function () {
+          $(this).parents().find('.linea1').addClass('icono_cruz1');
+        });
+
+        $('.contenedorLineas').on('click', function () {
+          $(this).parents().find('.linea2').addClass('icono_cruz2');
+        });
+
+        $('.contenedorLineas').on('click', function () {
+          $(this).parents().find('.linea3').addClass('icono_cruz3');
+        });
+
+        $('.contenedor').on('click', function () {
+          $(this).parents().find('.menuDesplegado').addClass('menuPlegado');
+        });
+
+        $('.contenedor').on('click', function () {
+          $(this).parents().find('.icono_cruz1').toggleClass('linea1');
+          $(this).parents().find('.linea1').removeClass('icono_cruz1');
+        });
+
+        $('.contenedor').on('click', function () {
+          $(this).parents().find('.icono_cruz2').toggleClass('linea2');
+          $(this).parents().find('.linea2').removeClass('icono_cruz2');
+        });
+
+        $('.contenedor').on('click', function () {
+          $(this).parents().find('.icono_cruz3').toggleClass('linea3');
+          $(this).parents().find('.linea3').removeClass('icono_cruz3');
+        });
+
+        $('.contenedorLineas').on('click', function () {
+          $(this).parents().find('.icono_cruz1').toggleClass('linea1');
+          $(this).parents().find('.linea1').removeClass('icono_cruz1');
+        });
+
+        $('.contenedorLineas').on('click', function () {
+          $(this).parents().find('.icono_cruz2').toggleClass('linea2');
+          $(this).parents().find('.linea2').removeClass('icono_cruz2');
+        });
+
+        $('.contenedorLineas').on('click', function () {
+          $(this).parents().find('.icono_cruz3').toggleClass('linea3');
+          $(this).parents().find('.linea3').removeClass('icono_cruz3');
+        });
+
+        $('.volver').on('click', function () {
+          $(this).parents().find('.icono_cruz1').toggleClass('linea1');
+          $(this).parents().find('.linea1').removeClass('icono_cruz1');
+        });
+
+        $('.volver').on('click', function () {
+          $(this).parents().find('.icono_cruz2').toggleClass('linea2');
+          $(this).parents().find('.linea2').removeClass('icono_cruz2');
+        });
+
+        $('.volver').on('click', function () {
+          $(this).parents().find('.icono_cruz3').toggleClass('linea3');
+          $(this).parents().find('.linea3').removeClass('icono_cruz3');
+        });
+
+        $('.boton_smr').on('click', function () {
+          $(this).parents().find('.icono_cruz1').toggleClass('linea1');
+          $(this).parents().find('.linea1').removeClass('icono_cruz1');
+        });
+
+        $('.boton_smr').on('click', function () {
+          $(this).parents().find('.icono_cruz2').toggleClass('linea2');
+          $(this).parents().find('.linea2').removeClass('icono_cruz2');
+        });
+
+        $('.boton_smr').on('click', function () {
+          $(this).parents().find('.icono_cruz3').toggleClass('linea3');
+          $(this).parents().find('.linea3').removeClass('icono_cruz3');
+        });
+
+        $('.boton_asir').on('click', function () {
+          $(this).parents().find('.icono_cruz1').toggleClass('linea1');
+          $(this).parents().find('.linea1').removeClass('icono_cruz1');
+        });
+
+        $('.boton_asir').on('click', function () {
+          $(this).parents().find('.icono_cruz2').toggleClass('linea2');
+          $(this).parents().find('.linea2').removeClass('icono_cruz2');
+        });
+
+        $('.boton_asir').on('click', function () {
+          $(this).parents().find('.icono_cruz3').toggleClass('linea3');
+          $(this).parents().find('.linea3').removeClass('icono_cruz3');
+        });
+
+        $('.boton_daw').on('click', function () {
+          $(this).parents().find('.icono_cruz1').toggleClass('linea1');
+          $(this).parents().find('.linea1').removeClass('icono_cruz1');
+        });
+
+        $('.boton_daw').on('click', function () {
+          $(this).parents().find('.icono_cruz2').toggleClass('linea2');
+          $(this).parents().find('.linea2').removeClass('icono_cruz2');
+        });
+
+        $('.boton_daw').on('click', function () {
+          $(this).parents().find('.icono_cruz3').toggleClass('linea3');
+          $(this).parents().find('.linea3').removeClass('icono_cruz3');
+        });
+
+        $('.boton_dam').on('click', function () {
+          $(this).parents().find('.icono_cruz1').toggleClass('linea1');
+          $(this).parents().find('.linea1').removeClass('icono_cruz1');
+        });
+
+        $('.boton_dam').on('click', function () {
+          $(this).parents().find('.icono_cruz2').toggleClass('linea2');
+          $(this).parents().find('.linea2').removeClass('icono_cruz2');
+        });
+
+        $('.boton_dam').on('click', function () {
+          $(this).parents().find('.icono_cruz3').toggleClass('linea3');
+          $(this).parents().find('.linea3').removeClass('icono_cruz3');
+        });
+
+        $('.boton_cyber').on('click', function () {
+          $(this).parents().find('.icono_cruz1').toggleClass('linea1');
+          $(this).parents().find('.linea1').removeClass('icono_cruz1');
+        });
+
+        $('.boton_cyber').on('click', function () {
+          $(this).parents().find('.icono_cruz2').toggleClass('linea2');
+          $(this).parents().find('.linea2').removeClass('icono_cruz2');
+        });
+
+        $('.boton_cyber').on('click', function () {
+          $(this).parents().find('.icono_cruz3').toggleClass('linea3');
+          $(this).parents().find('.linea3').removeClass('icono_cruz3');
         });
       });
     </script>
